@@ -1,5 +1,7 @@
 # Yugen
 
+> [Checkout the App here](https://github.com/DarthBenro008/yugen/)
+
 <p align="center">
 <a href="https://www.unichain.tk">
 <img img src="https://i.ibb.co/fnz7V5f/Banner.png" alt="Banner"/>
@@ -10,9 +12,11 @@
 
 YuGen is a productivity and self-growth tool. The motive of the app is not to dynamically tell you what to do, but it’s is a reflection of your day and gives you control over what to do further.
 
+The word Yūgen is said to mean “a profound, mysterious sense of the beauty of the universe… and the sad beauty of human suffering”.means
+
 YuGen is a very advanced combination of a high complexity ToDo App, Diary and dictaphone that is a perfect fit for any individuals and teams to make use of.
 
-# The Problems
+# The Problem and Inspiration
 
 Human psychology is an intriguing subject. Sometimes these small things add up and impact one's life in the longer term.
 
