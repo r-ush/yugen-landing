@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html>
+  <title>Yugen - Heal, Grow, Accomplish</title>
   <head>
-    <title>Yugen - Heal, Grow, Accomplish</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1440, maximum-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
@@ -23,10 +24,10 @@
       }
 
       @font-face {
-        font-family: "Recoleta-Light";
+        font-family: "Recoleta-RegularDEMO";
         font-style: normal;
-        font-weight: 300;
-        src: url("https://anima-uploads.s3.amazonaws.com/5d49e2ded0cf9bced7956c27/Latinotype - Recoleta Light.otf")
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5ce4637f469842000ae9ee31/Recoleta-RegularDEMO.otf")
           format("opentype");
       }
 
@@ -199,24 +200,23 @@
         --white: #ffffff;
 
         --font-size-24_1px: 24.1px;
-        --font-size-35_5px: 35.5px;
+        --font-size-53_9px: 53.9px;
         --font-size-61_7px: 61.7px;
-        --font-size-85_1px: 85.1px;
         --font-size-l: 24px;
         --font-size-m: 20px;
         --font-size-s: 18px;
         --font-size-xl: 28px;
-        --font-size-xs: 14px;
+        --font-size-xs: 16px;
         --font-size-xxl: 32px;
-        --font-size-xxxl: 38px;
+        --font-size-xxxl: 36px;
         --font-size-xxxxl: 40px;
         --font-size-xxxxxl: 48px;
         --font-size-xxxxxxl: 80px;
 
         --font-family-nunito_sans: "Nunito Sans", Helvetica;
-        --font-family-recoleta-light: "Recoleta-Light", Helvetica;
         --font-family-recoleta-medium: "Recoleta-Medium", Helvetica;
         --font-family-recoleta-regular: "Recoleta-Regular", Helvetica;
+        --font-family-recoleta-regulardemo: "Recoleta-RegularDEMO", Helvetica;
         --font-family-recoleta-semibold: "Recoleta-SemiBold", Helvetica;
         --font-family-work_sans: "Work Sans", Helvetica;
       }
@@ -241,6 +241,13 @@
         font-style: normal;
         font-weight: 400;
       }
+      .worksans-normal-white-20px {
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+      }
       .recoleta-medium-white-28px {
         color: var(--white);
         font-family: var(--font-family-recoleta-medium);
@@ -255,13 +262,6 @@
         font-style: normal;
         font-weight: 400;
       }
-      .worksans-normal-white-20px {
-        color: var(--white);
-        font-family: var(--font-family-work_sans);
-        font-size: var(--font-size-m);
-        font-style: normal;
-        font-weight: 400;
-      }
 
       /* screen - yugen */
 
@@ -269,7 +269,7 @@
         background-color: var(--white);
         height: 100vh;
         margin: 0px;
-        min-height: 10124px;
+        min-height: 12479px;
         min-width: 1440px;
         mix-blend-mode: normal;
         overflow: hidden;
@@ -305,30 +305,30 @@
         opacity: 0;
       }
       .yugen .animate-enter {
-        animation: animate-enter-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(25px, 0);
-      }
-      .yugen .animate-enter1 {
-        animation: animate-enter1-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(-25px, 0);
-      }
-      .yugen .animate-enter10 {
-        animation: animate-enter10-frames 0.44s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-      }
-      .yugen .animate-enter11 {
-        animation: animate-enter11-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter-frames 0.4s ease-in-out 2s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
       }
+      .yugen .animate-enter1 {
+        animation: animate-enter1-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter10 {
+        animation: animate-enter10-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter11 {
+        animation: animate-enter11-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
       .yugen .animate-enter12 {
-        animation: animate-enter12-frames 0.4s ease-in-out 2s 1 normal forwards;
+        animation: animate-enter12-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
@@ -342,7 +342,7 @@
         animation: animate-enter14-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(-25px, 0);
+        transform: translate(0, 25px);
       }
       .yugen .animate-enter15 {
         animation: animate-enter15-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -353,7 +353,7 @@
         animation: animate-enter16-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(25px, 0);
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter17 {
         animation: animate-enter17-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -361,9 +361,10 @@
         opacity: 0;
       }
       .yugen .animate-enter18 {
-        animation: animate-enter18-frames 0.44s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter18-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+        transform: translate(25px, 0);
       }
       .yugen .animate-enter19 {
         animation: animate-enter19-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -371,7 +372,7 @@
         opacity: 0;
       }
       .yugen .animate-enter2 {
-        animation: animate-enter2-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter2-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(-25px, 0);
@@ -382,28 +383,26 @@
         opacity: 0;
       }
       .yugen .animate-enter21 {
-        animation: animate-enter21-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter21-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
       }
       .yugen .animate-enter22 {
-        animation: animate-enter22-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter22-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter23 {
+        animation: animate-enter23-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
       }
-      .yugen .animate-enter23 {
-        animation: animate-enter23-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(-25px, 0);
-      }
       .yugen .animate-enter24 {
-        animation: animate-enter24-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter24-frames 0.5s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(-25px, 0);
+        transform: translate(0, 25px);
       }
       .yugen .animate-enter25 {
         animation: animate-enter25-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -411,21 +410,26 @@
         opacity: 0;
       }
       .yugen .animate-enter26 {
-        animation: animate-enter26-frames 0.5s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter26-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter27 {
+        animation: animate-enter27-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
       }
       .yugen .animate-enter3 {
-        animation: animate-enter3-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter3-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter4 {
-        animation: animate-enter4-frames 0.44s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter4-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+        transform: translate(25px, 0);
       }
       .yugen .animate-enter5 {
         animation: animate-enter5-frames 0.4s ease-in-out 0s 1 normal forwards;
@@ -434,26 +438,27 @@
         transform: translate(-25px, 0);
       }
       .yugen .animate-enter6 {
-        animation: animate-enter6-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter6-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(25px, 0);
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter7 {
-        animation: animate-enter7-frames 0.44s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-      }
-      .yugen .animate-enter8 {
-        animation: animate-enter8-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter7-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
       }
-      .yugen .animate-enter9 {
-        animation: animate-enter9-frames 0.44s ease-in-out 0s 1 normal forwards;
+      .yugen .animate-enter8 {
+        animation: animate-enter8-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+      }
+      .yugen .animate-enter9 {
+        animation: animate-enter9-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
       }
       .yugen .build-organize-tually-anywhere-r1vSAy {
         background-color: transparent;
@@ -471,16 +476,65 @@
         top: 48px;
         width: 522px;
       }
-      .yugen .checkout-our-designs-here-K7aGaS {
+      .yugen .business-model-UzCuG3 {
+        background-color: transparent;
+        bottom: 409px;
+        display: block;
+        height: auto;
+        left: calc(50% - 297px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .check-us-out-at-YD2fMR {
+        background-color: transparent;
+        bottom: 170px;
+        color: var(--black);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-xxl);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 114px);
+        letter-spacing: 0px;
+        line-height: 50.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .checkout-our-designs-here-Yy4Vjx {
         background-color: transparent;
         color: var(--white);
         font-family: var(--font-family-work_sans);
         font-size: var(--font-size-xs);
         font-weight: 500;
         height: auto;
-        left: 19px;
+        left: 74px;
         letter-spacing: 0px;
-        line-height: 19.3px;
+        line-height: 22.1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 19px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .checkout-the-app-now-hpFXFR {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-weight: 500;
+        height: auto;
+        left: 79px;
+        letter-spacing: 0px;
+        line-height: 24.8px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -535,43 +589,7 @@
         top: 53px;
         width: 229px;
       }
-      .yugen .download-app-lX15QB {
-        background-color: transparent;
-        color: var(--white);
-        font-family: var(--font-family-work_sans);
-        font-size: var(--font-size-s);
-        font-weight: 500;
-        height: auto;
-        left: 19px;
-        letter-spacing: 0px;
-        line-height: 24.8px;
-        mix-blend-mode: normal;
-        position: absolute;
-        text-align: left;
-        top: 19px;
-        white-space: nowrap;
-        width: auto;
-      }
-      .yugen .download-the-app-now-QKvJL0 {
-        background-color: transparent;
-        bottom: 267px;
-        color: var(--cod-gray);
-        display: block;
-        font-family: var(--font-family-recoleta-regular);
-        font-size: var(--font-size-35_5px);
-        font-weight: 400;
-        height: auto;
-        left: calc(50% - 198px);
-        letter-spacing: 0px;
-        line-height: 39.1px;
-        mix-blend-mode: normal;
-        position: absolute;
-        text-align: left;
-        white-space: nowrap;
-        width: 395px;
-        opacity: 0;
-      }
-      .yugen .ellipse-4-MLKpyy {
+      .yugen .ellipse-4-NPza0I {
         background-color: #eb7288;
         border-radius: 99.07332611083984px;
         bottom: 0px;
@@ -581,24 +599,24 @@
         position: absolute;
         width: 198px;
       }
-      .yugen .ellipse-59-g3HKGB {
+      .yugen .ellipse-59-RNt1YE {
         background-color: #1f1f1f;
         border-radius: 97.0465087890625px;
         bottom: 299px;
         height: 194px;
-        left: calc(50% + 40px);
+        left: calc(50% + 31px);
         mix-blend-mode: normal;
         position: absolute;
         width: 194px;
       }
-      .yugen .ellipse-60-g3HKGB {
+      .yugen .ellipse-60-RNt1YE {
         background-color: transparent;
         bottom: 37px;
         height: 281px;
-        left: calc(50% - 32px);
+        left: calc(50% - 42px);
         mix-blend-mode: normal;
         position: absolute;
-        width: 556px;
+        width: 557px;
       }
       .yugen .emotional-growt-taphone-feature-O4xPlN {
         background-color: transparent;
@@ -633,7 +651,7 @@
         top: 0px;
         width: 495px;
         opacity: 0;
-        transform: translate(25px, 0);
+        transform: translate(-25px, 0);
       }
       .yugen .frame-130-dlKqZ6 {
         background-color: transparent;
@@ -658,38 +676,52 @@
       .yugen .frame-486-jCcFz7 {
         background-color: var(--white);
         border-radius: 6px;
+        bottom: 0px;
         box-shadow: 0px 6px 30px #cecece42;
         height: 300px;
         left: calc(50% - 551px);
         mix-blend-mode: normal;
         overflow: hidden;
         position: absolute;
-        top: 180px;
         width: 300px;
       }
       .yugen .frame-487-jCcFz7 {
         background-color: var(--white);
         border-radius: 6px;
+        bottom: 0px;
         box-shadow: 0px 6px 30px #cecece42;
         height: 300px;
         left: calc(50% - 151px);
         mix-blend-mode: normal;
         overflow: hidden;
         position: absolute;
-        top: 180px;
         width: 300px;
       }
       .yugen .frame-488-jCcFz7 {
         background-color: var(--white);
         border-radius: 6px;
+        bottom: 0px;
         box-shadow: 0px 6px 30px #cecece42;
         height: 300px;
         left: calc(50% + 249px);
         mix-blend-mode: normal;
         overflow: hidden;
         position: absolute;
-        top: 180px;
         width: 300px;
+      }
+      .yugen .frame-562-C61RwL {
+        background-color: var(--white);
+        border-radius: 12px;
+        bottom: 994px;
+        box-shadow: 0px 12px 40px #dbdbdb40;
+        display: block;
+        height: 366px;
+        left: calc(50% - 460px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 920px;
+        opacity: 0;
+        transform: translate(0, 25px);
       }
       .yugen .frame-699-gpQSQ3 {
         background-color: var(--white);
@@ -751,17 +783,17 @@
         top: 532px;
         width: 300px;
       }
-      .yugen .frame-705-QKvJL0 {
+      .yugen .frame-705-c8E1Fx {
         background-color: var(--royal-blue);
         border-radius: 4.744753837585449px;
-        bottom: 0px;
+        bottom: 1px;
         box-shadow: 0px 3.9539613723754883px 19.769805908203125px #4454de80;
         cursor: pointer;
-        height: 57px;
-        left: calc(50% - 198px);
+        height: 60px;
+        left: calc(50% - 180px);
         mix-blend-mode: normal;
         position: absolute;
-        width: 222px;
+        width: 358px;
       }
       .yugen .frame-706-C61RwL {
         background-color: transparent;
@@ -772,17 +804,17 @@
         top: 875px;
         width: 1860px;
       }
-      .yugen .frame-706-QKvJL0 {
+      .yugen .frame-706-c8E1Fx {
         background-color: var(--royal-blue);
         border-radius: 4.744753837585449px;
-        bottom: 180px;
+        bottom: 179px;
         box-shadow: 0px 3.9539613723754883px 19.769805908203125px #4454de80;
         cursor: pointer;
         height: 63px;
-        left: calc(50% - 198px);
+        left: calc(50% - 180px);
         mix-blend-mode: normal;
         position: absolute;
-        width: 166px;
+        width: 359px;
       }
       .yugen .frame-707-C61RwL {
         background-color: transparent;
@@ -790,8 +822,119 @@
         left: calc(50% - 617px);
         mix-blend-mode: normal;
         position: absolute;
-        top: 3869px;
+        top: 5415px;
         width: 1239px;
+      }
+      .yugen .frame-708-HnQ0LK {
+        background-color: var(--white);
+        border-radius: 12px;
+        bottom: 0px;
+        box-shadow: 0px 12px 40px #cfcfcf40;
+        height: 644px;
+        left: calc(50% - 583px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 1166px;
+      }
+      .yugen .frame-709-TWLI1A {
+        background-color: transparent;
+        height: 478px;
+        left: 48px;
+        position: absolute;
+        top: 83px;
+        width: 634px;
+      }
+      .yugen .frame-710-C61RwL {
+        background-color: var(--white);
+        border-radius: 12px;
+        bottom: 2917px;
+        box-shadow: 0px 12px 40px #cfcfcf40;
+        height: 608px;
+        left: calc(50% - 583px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 1166px;
+      }
+      .yugen .frame-710-GbV2FX {
+        background-color: var(--white);
+        border-radius: 12px;
+        bottom: 0px;
+        box-shadow: 0px 12px 40px #cfcfcf40;
+        height: 561px;
+        left: calc(50% - 583px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 1165px;
+      }
+      .yugen .frame-711-awpGkV {
+        background-color: transparent;
+        height: 462px;
+        left: 523px;
+        position: absolute;
+        top: 50px;
+        width: 595px;
+      }
+      .yugen .frame-713-iZ76HW {
+        background-color: transparent;
+        height: 398px;
+        left: 199px;
+        position: absolute;
+        top: 151px;
+        width: 769px;
+      }
+      .yugen .frame-713-tfNhE9 {
+        background-color: transparent;
+        height: 378px;
+        left: 10px;
+        position: absolute;
+        top: 10px;
+        width: 243px;
+      }
+      .yugen .frame-714-tfNhE9 {
+        background-color: transparent;
+        height: 362px;
+        left: 377px;
+        position: absolute;
+        top: 10px;
+        width: 382px;
+      }
+      .yugen .frame-715-YD2fMR {
+        background-color: transparent;
+        border: 1px solid var(--royal-blue);
+        border-radius: 5px;
+        bottom: 0px;
+        height: 128px;
+        left: calc(50% - 266px);
+        position: absolute;
+        width: 531px;
+      }
+      .yugen .fresh-folk-teamwork-DO168H {
+        background-color: transparent;
+        height: 268px;
+        left: calc(50% - 191px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 0px;
+        width: 382px;
+      }
+      .yugen .future-aspect-of-yugen-LdCHeg {
+        background-color: transparent;
+        bottom: 425px;
+        color: #191919;
+        display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxxxl);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 317px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
       }
       .yugen .g114-xmeKl4 {
         background-color: transparent;
@@ -931,21 +1074,21 @@
         top: 99px;
         width: 102px;
       }
-      .yugen .group-12-Qmpzs2 {
+      .yugen .group-12-HnEH90 {
         background-color: transparent;
-        bottom: 122px;
+        bottom: 93px;
         height: 198px;
         left: calc(50% - 99px);
         position: absolute;
         width: 198px;
       }
-      .yugen .group-13-Qmpzs2 {
+      .yugen .group-13-HnEH90 {
         background-color: transparent;
         bottom: 0px;
-        height: 80px;
-        left: calc(50% - 116px);
+        height: 51px;
+        left: calc(50% - 73px);
         position: absolute;
-        width: 233px;
+        width: 151px;
       }
       .yugen .group-14-C61RwL {
         background-color: transparent;
@@ -955,13 +1098,13 @@
         top: 40px;
         width: 170px;
       }
-      .yugen .group-14-kqmEWe {
+      .yugen .group-14-Ed4Aol {
         background-color: transparent;
-        height: 320px;
-        left: 0px;
+        height: 291px;
+        left: 77px;
         position: absolute;
-        top: 0px;
-        width: 231px;
+        top: 38px;
+        width: 198px;
       }
       .yugen .group-541-eykqzh {
         background-color: transparent;
@@ -980,15 +1123,15 @@
         top: 88px;
         width: 583px;
         opacity: 0;
-        transform: translate(-25px, 0);
+        transform: translate(25px, 0);
       }
       .yugen .group-546-C61RwL {
         background-color: transparent;
         display: block;
-        height: 318px;
+        height: 352px;
         left: calc(50% - 616px);
         position: absolute;
-        top: 6683px;
+        top: 3585px;
         width: 599px;
         opacity: 0;
         transform: translate(-25px, 0);
@@ -1033,11 +1176,11 @@
       }
       .yugen .group-554-C61RwL {
         background-color: transparent;
+        bottom: 1524px;
         display: block;
         height: 480px;
         left: calc(50% - 550px);
         position: absolute;
-        top: 8372px;
         width: 1102px;
         opacity: 0;
         transform: translate(0, 25px);
@@ -1048,37 +1191,18 @@
         height: 1032px;
         left: calc(50% - 532px);
         position: absolute;
-        top: 2698px;
+        top: 4303px;
         width: 1064px;
         opacity: 0;
         transform: translate(0, 25px);
       }
-      .yugen .group-560-C61RwL {
+      .yugen .group-561-Ed4Aol {
         background-color: transparent;
-        bottom: -182px;
-        height: 650px;
-        left: 0px;
-        position: absolute;
-        width: calc(100% + 15px);
-      }
-      .yugen .group-561-kqmEWe {
-        background-color: transparent;
-        bottom: 7px;
-        height: 306px;
+        bottom: 62px;
+        height: 242px;
         left: calc(50% + 24px);
         position: absolute;
-        width: 397px;
-      }
-      .yugen .group-562-C61RwL {
-        background-color: transparent;
-        display: block;
-        height: 320px;
-        left: 304px;
-        position: absolute;
-        top: 9072px;
-        width: 832px;
-        opacity: 0;
-        transform: translate(0, 25px);
+        width: 361px;
       }
       .yugen .group-563-C61RwL {
         background-color: transparent;
@@ -1086,7 +1210,7 @@
         height: 396px;
         left: calc(50% - 616px);
         position: absolute;
-        top: 7446px;
+        top: 2711px;
         width: 713px;
         opacity: 0;
         transform: translate(-25px, 0);
@@ -1161,10 +1285,66 @@
         height: 646px;
         left: calc(50% - 555px);
         position: absolute;
-        top: 5913px;
+        top: 7459px;
         width: 1128px;
         opacity: 0;
         transform: translate(0, 25px);
+      }
+      .yugen .group-574-O4mycJ {
+        background-color: transparent;
+        height: 268px;
+        left: calc(50% - 191px);
+        position: absolute;
+        top: 94px;
+        width: 382px;
+      }
+      .yugen .group-574-sJgWRT {
+        background-color: transparent;
+        height: 284px;
+        left: calc(50% - 122px);
+        position: absolute;
+        top: 94px;
+        width: 243px;
+      }
+      .yugen .group-578-C61RwL {
+        background-color: transparent;
+        bottom: 2169px;
+        height: 644px;
+        left: calc(50% - 583px);
+        position: absolute;
+        width: 1166px;
+      }
+      .yugen .group-579-C61RwL {
+        background-color: transparent;
+        bottom: 3629px;
+        height: 561px;
+        left: calc(50% - 583px);
+        position: absolute;
+        width: 1165px;
+      }
+      .yugen .group-580-C61RwL {
+        background-color: transparent;
+        bottom: -131px;
+        height: 600px;
+        left: 0px;
+        position: absolute;
+        width: calc(100% + 33px);
+      }
+      .yugen .group-581-CTAjml {
+        background-color: transparent;
+        bottom: 0px;
+        height: 581px;
+        left: calc(50% - 699px);
+        position: absolute;
+        width: 1436px;
+      }
+      .yugen .group-582-C61RwL {
+        background-color: transparent;
+        bottom: 603px;
+        height: 221px;
+        left: calc(50% - 266px);
+        position: absolute;
+        width: 533px;
       }
       .yugen .group-ycAXJ8 {
         background-color: transparent;
@@ -1243,22 +1423,22 @@
       }
       .yugen .image-13-C61RwL {
         background-color: transparent;
-        height: 1006px;
+        height: 1005px;
         mix-blend-mode: normal;
         object-fit: cover;
         position: absolute;
         right: -718px;
-        top: 6827px;
+        top: 2933px;
         width: 1722px;
       }
       .yugen .image-2-Hd2NY5 {
         background-color: transparent;
-        height: 647px;
+        height: 646px;
         left: -1px;
         mix-blend-mode: normal;
         object-fit: cover;
         position: absolute;
-        top: -1px;
+        top: 0px;
         width: 400px;
       }
       .yugen .image-20-eykqzh {
@@ -1294,16 +1474,6 @@
         top: 0px;
         width: 400px;
       }
-      .yugen .image-8-C61RwL {
-        background-color: transparent;
-        height: 347px;
-        left: 440px;
-        mix-blend-mode: normal;
-        object-fit: cover;
-        position: absolute;
-        top: 7904px;
-        width: 562px;
-      }
       .yugen .journal-all-the-group-features-61QJC0 {
         background-color: transparent;
         bottom: 122px;
@@ -1330,7 +1500,11 @@
       }
       .yugen .lets-take-you-o-a-short-journey-Kzp7Wd {
         background-color: transparent;
+        color: var(--black);
         display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxxxl);
+        font-weight: 400;
         height: auto;
         left: calc(50% - 551px);
         letter-spacing: 0px;
@@ -1353,15 +1527,15 @@
         top: 91px;
         width: 95px;
       }
-      .yugen .mask-group-MLKpyy {
+      .yugen .mask-group-NPza0I {
         background-color: transparent;
         bottom: 0px;
-        height: 199px;
+        height: 198px;
         left: calc(50% - 100px);
         position: absolute;
         width: 199px;
       }
-      .yugen .meanwhile-QKvJL0 {
+      .yugen .meanwhile-c8E1Fx {
         background-color: transparent;
         bottom: 75px;
         color: var(--cod-gray);
@@ -1370,7 +1544,7 @@
         font-size: var(--font-size-m);
         font-weight: 400;
         height: auto;
-        left: calc(50% - 198px);
+        left: calc(50% - 50px);
         letter-spacing: 0px;
         line-height: 22px;
         mix-blend-mode: normal;
@@ -1408,11 +1582,11 @@
       }
       .yugen .path128-SQlDoh {
         background-color: transparent;
-        height: 258px;
+        height: 259px;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        top: calc(50% - 129px);
+        top: calc(50% - 130px);
         width: calc(100% + 1px);
       }
       .yugen .path130-xmeKl4 {
@@ -1534,13 +1708,30 @@
       .yugen .problems-fyjDSQ {
         background-color: transparent;
         color: var(--white);
-        font-family: var(--font-family-recoleta-light);
+        font-family: var(--font-family-recoleta-regulardemo);
         font-size: var(--font-size-xxxxl);
-        font-weight: 300;
+        font-weight: 400;
         height: auto;
         left: calc(50% - 357px);
         letter-spacing: 0px;
         line-height: 49.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .professionals-O4mycJ {
+        background-color: transparent;
+        color: #3d3d3d;
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-xxl);
+        font-weight: 500;
+        height: auto;
+        left: 86px;
+        letter-spacing: 0px;
+        line-height: 46.4px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -1560,14 +1751,14 @@
         top: 381px;
         width: 266px;
       }
-      .yugen .rectangle-396-g3HKGB {
-        background-color: var(--royal-blue);
-        bottom: 182px;
+      .yugen .rectangle-396-CTAjml {
+        background-color: #ffede8;
+        bottom: 131px;
         height: 469px;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        width: calc(100% - 15px);
+        width: calc(100% - 33px);
       }
       .yugen .rectangle-397-C61RwL {
         background-color: var(--royal-blue);
@@ -1575,7 +1766,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 4567px;
+        top: 6112px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-398-C61RwL {
@@ -1584,7 +1775,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 4131px;
+        top: 5676px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-399-C61RwL {
@@ -1593,7 +1784,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 5001px;
+        top: 6547px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-400-C61RwL {
@@ -1611,8 +1802,17 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 5466px;
+        top: 7012px;
         width: calc(100% + 553px);
+      }
+      .yugen .rectangle-402-C61RwL {
+        background-color: transparent;
+        bottom: 2462px;
+        height: 1454px;
+        left: -211px;
+        mix-blend-mode: normal;
+        position: absolute;
+        width: calc(100% + 318px);
       }
       .yugen .rectangle-65-C61RwL {
         background-color: #79d3e0;
@@ -1625,11 +1825,11 @@
       }
       .yugen .rectangle-67-C61RwL {
         background-color: transparent;
-        height: 1709px;
+        height: 1518px;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 6266px;
+        top: 2558px;
         width: calc(100% + 3px);
       }
       .yugen .simple-iconsts-node-2PHdm8 {
@@ -1673,14 +1873,40 @@
         font-size: var(--font-size-xxxxxl);
         font-weight: 600;
       }
-      .yugen .star-g3HKGB {
+      .yugen .squiggles-colorful-TWLI1A {
         background-color: transparent;
-        bottom: 25px;
-        height: 324px;
-        left: calc(50% - 681px);
+        height: 548px;
+        left: 729px;
         mix-blend-mode: normal;
         position: absolute;
-        width: 321px;
+        top: 48px;
+        width: 390px;
+      }
+      .yugen .star-RNt1YE {
+        background-color: transparent;
+        bottom: 25px;
+        height: 323px;
+        left: calc(50% - 690px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 322px;
+      }
+      .yugen .students-sJgWRT {
+        background-color: transparent;
+        color: #3d3d3d;
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-xxl);
+        font-weight: 500;
+        height: auto;
+        left: 50px;
+        letter-spacing: 0px;
+        line-height: 46.4px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
       }
       .yugen .team-collaboration-ifxR5S {
         background-color: transparent;
@@ -1712,6 +1938,7 @@
       }
       .yugen .tech-stack-jCcFz7 {
         background-color: transparent;
+        bottom: 427px;
         display: block;
         height: auto;
         left: calc(50% - 112px);
@@ -1720,7 +1947,6 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 0px;
         white-space: nowrap;
         width: auto;
         opacity: 0;
@@ -1734,23 +1960,6 @@
         position: absolute;
         top: 70px;
         width: 221px;
-      }
-      .yugen .title-yEPkQh {
-        background-color: transparent;
-        bottom: 0px;
-        color: #545454;
-        font-family: var(--font-family-recoleta-light);
-        font-size: var(--font-size-85_1px);
-        font-weight: 300;
-        height: auto;
-        left: calc(50% - 117px);
-        letter-spacing: 0px;
-        line-height: 79.8px;
-        mix-blend-mode: normal;
-        position: absolute;
-        text-align: left;
-        white-space: nowrap;
-        width: 233px;
       }
       .yugen .to-do-U6OUdv {
         background-color: transparent;
@@ -1779,7 +1988,7 @@
       }
       .yugen .tourists-LaOufS {
         background-color: transparent;
-        height: 213px;
+        height: 212px;
         left: 44px;
         mix-blend-mode: normal;
         object-fit: cover;
@@ -1837,24 +2046,24 @@
         top: 134px;
         width: 401px;
       }
-      .yugen .union-Cla5sn {
+      .yugen .union-G3S0tK {
         background-color: transparent;
         bottom: 131px;
         height: 258px;
-        left: calc(50% + 442px);
+        left: calc(50% + 432px);
         mix-blend-mode: normal;
         position: absolute;
         width: 258px;
       }
-      .yugen .union-g3HKGB {
+      .yugen .union-RNt1YE {
         background-color: transparent;
         bottom: 79px;
         display: block;
         height: 470px;
-        left: calc(50% - 411px);
+        left: calc(50% - 420px);
         mix-blend-mode: normal;
         position: absolute;
-        width: 477px;
+        width: 476px;
         opacity: 0;
         transform: translate(0, 25px);
       }
@@ -1870,47 +2079,47 @@
       }
       .yugen .vector-25-5Nxcvc {
         background-color: transparent;
-        height: 752px;
-        left: 159px;
+        height: 768px;
+        left: 70px;
         position: absolute;
-        top: -295px;
+        top: -303px;
         transform: rotate(-139.95deg);
-        width: 698px;
+        width: 875px;
       }
       .yugen .vector-26-5Nxcvc {
         background-color: transparent;
-        height: 740px;
-        left: 151px;
+        height: 783px;
+        left: 71px;
         position: absolute;
-        top: -294px;
+        top: -316px;
         transform: rotate(-139.95deg);
-        width: 731px;
+        width: 891px;
       }
       .yugen .vector-27-5Nxcvc {
         background-color: transparent;
-        height: 621px;
-        left: 101px;
+        height: 795px;
+        left: 66px;
         position: absolute;
-        top: -214px;
+        top: -301px;
         transform: rotate(-139.95deg);
-        width: 829px;
+        width: 900px;
       }
       .yugen .vector-6kztxm {
         background-color: transparent;
-        height: 14.42%;
+        height: 14.85%;
         left: 46.84%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 73.94%;
+        top: 73.73%;
         width: 18.38%;
       }
       .yugen .vector-CvikQ2 {
         background-color: transparent;
-        height: 100.3%;
+        height: 100.79%;
         left: 5.72%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 0px;
+        top: -0.4%;
         width: 88.56%;
       }
       .yugen .vector-DpnTTN {
@@ -1922,13 +2131,22 @@
         top: 72.56%;
         width: 53.05%;
       }
+      .yugen .vector-FDZPW0 {
+        background-color: transparent;
+        height: 276px;
+        left: calc(50% - 122px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 0px;
+        width: 244px;
+      }
       .yugen .vector-FfTe2l {
         background-color: transparent;
-        height: 65.74%;
+        height: 65.32%;
         left: -0.3%;
         mix-blend-mode: normal;
         position: absolute;
-        top: -0.31%;
+        top: 0px;
         width: 100.32%;
       }
       .yugen .vector-GSee4F {
@@ -1942,29 +2160,29 @@
       }
       .yugen .vector-HhEcmI {
         background-color: transparent;
-        height: 33.74%;
+        height: 34.23%;
         left: 49.7%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 33.13%;
+        top: 32.89%;
         width: 50.61%;
       }
       .yugen .vector-Io3CC9 {
         background-color: transparent;
-        height: 76.82%;
+        height: 77.31%;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 11.59%;
+        top: 11.35%;
         width: 100.21%;
       }
       .yugen .vector-Svqa5X {
         background-color: transparent;
-        height: 33.74%;
+        height: 34.23%;
         left: -0.3%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 33.13%;
+        top: 32.89%;
         width: 50.61%;
       }
       .yugen .vector-bfUX5m {
@@ -2012,22 +2230,73 @@
         top: -0.2%;
         width: 50.61%;
       }
+      .yugen .watch-os-and-de-of-its-members-LdCHeg {
+        background-color: transparent;
+        color: var(--black);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 29px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 101px;
+        width: 636px;
+      }
+      .yugen .we-plan-to-foll-of-the-product-UzCuG3 {
+        background-color: transparent;
+        color: var(--black);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 29px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 85px;
+        width: 597px;
+      }
       .yugen .what-is-yugen-yzfg5m {
         background-color: transparent;
         color: var(--white);
-        font-family: var(--font-family-work_sans);
-        font-size: var(--font-size-s);
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxxl);
         font-weight: 400;
         height: auto;
         left: calc(50% - 299px);
         letter-spacing: 0px;
-        line-height: 27px;
+        line-height: 60px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
         top: 0px;
         white-space: nowrap;
         width: auto;
+      }
+      .yugen .who-is-this-app-for-iZ76HW {
+        background-color: transparent;
+        bottom: 505px;
+        color: var(--cod-gray);
+        display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxxl);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 176px);
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
       }
       .yugen .why-yugen-C61RwL {
         background-color: transparent;
@@ -2039,7 +2308,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 2580px;
+        top: 4185px;
         white-space: nowrap;
         width: auto;
         opacity: 0;
@@ -2055,6 +2324,24 @@
         text-align: center;
         top: 379px;
         width: 266px;
+      }
+      .yugen .women-power-business-awpGkV {
+        background-color: transparent;
+        height: 466px;
+        left: 48px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 48px;
+        width: 394px;
+      }
+      .yugen .women-power-standing-FDZPW0 {
+        background-color: transparent;
+        height: 271px;
+        left: calc(50% - 108px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 13px;
+        width: 164px;
       }
       .yugen .work-in-peace-jxXxQ1 {
         background-color: transparent;
@@ -2099,7 +2386,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 46px;
+        top: 80px;
         width: 597px;
         opacity: 0;
         transform: translate(0, 25px);
@@ -2107,9 +2394,9 @@
       .yugen .yugen-AX7pWk {
         background-color: transparent;
         color: var(--white);
-        font-family: var(--font-family-recoleta-light);
+        font-family: var(--font-family-recoleta-regulardemo);
         font-size: var(--font-size-61_7px);
-        font-weight: 300;
+        font-weight: 400;
         height: auto;
         left: calc(50% - 85px);
         letter-spacing: 0px;
@@ -2120,6 +2407,23 @@
         top: 0px;
         white-space: nowrap;
         width: 170px;
+      }
+      .yugen .yugen-G6a8bS {
+        background-color: transparent;
+        bottom: 0px;
+        color: #545454;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-53_9px);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 75px);
+        letter-spacing: 0px;
+        line-height: 50.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: 151px;
       }
       .yugen .yugen-nbhwUF {
         background-color: transparent;
@@ -2136,27 +2440,43 @@
       }
       .yugen .yugen-timer-C61RwL {
         background-color: transparent;
-        bottom: 4242px;
         color: var(--white);
-        display: block;
-        font-family: var(--font-family-recoleta-medium);
+        font-family: var(--font-family-recoleta-regular);
         font-size: var(--font-size-xxxl);
-        font-weight: 500;
+        font-weight: 400;
         height: auto;
-        left: calc(50% - 104px);
+        left: 620px;
         letter-spacing: 0px;
-        line-height: 55.1px;
+        line-height: 52.2px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
+        top: 7387px;
         white-space: nowrap;
         width: auto;
-        opacity: 0;
+      }
+      .yugen .yugenbenrotech-Shaqu0 {
+        background-color: transparent;
+        color: var(--royal-blue);
+        cursor: pointer;
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-xxxxxl);
+        font-weight: 400;
+        height: auto;
+        left: 56px;
+        letter-spacing: 0px;
+        line-height: 50.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 38px;
+        white-space: nowrap;
+        width: auto;
       }
       @keyframes animate-enter-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2166,7 +2486,7 @@
       @keyframes animate-enter1-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2176,19 +2496,19 @@
       @keyframes animate-enter10-frames {
         from {
           opacity: 0;
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter11-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter12-frames {
@@ -2212,7 +2532,7 @@
       @keyframes animate-enter14-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2230,7 +2550,7 @@
       @keyframes animate-enter16-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
@@ -2248,9 +2568,11 @@
       @keyframes animate-enter18-frames {
         from {
           opacity: 0;
+          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter19-frames {
@@ -2282,27 +2604,23 @@
       @keyframes animate-enter21-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter22-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter23-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2312,7 +2630,7 @@
       @keyframes animate-enter24-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2330,17 +2648,23 @@
       @keyframes animate-enter26-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter27-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
         }
       }
       @keyframes animate-enter3-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
@@ -2350,9 +2674,11 @@
       @keyframes animate-enter4-frames {
         from {
           opacity: 0;
+          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter5-frames {
@@ -2368,7 +2694,7 @@
       @keyframes animate-enter6-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
@@ -2378,14 +2704,6 @@
       @keyframes animate-enter7-frames {
         from {
           opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes animate-enter8-frames {
-        from {
-          opacity: 0;
           transform: translate(0, 25px);
         }
         to {
@@ -2393,7 +2711,7 @@
           transform: translate(0, 0);
         }
       }
-      @keyframes animate-enter9-frames {
+      @keyframes animate-enter8-frames {
         from {
           opacity: 0;
         }
@@ -2401,653 +2719,61 @@
           opacity: 1;
         }
       }
+      @keyframes animate-enter9-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
     </style>
     <meta name="author" content="AnimaApp.com - Design to code, Automated." />
   </head>
   <body style="margin: 0; background: #ffffff">
     <input type="hidden" id="anPageName" name="page" value="yugen" />
-    <div class="yugen screen" data-id="42:23967">
-      <div class="rectangle-401-C61RwL" data-id="95:590"></div>
-      <div class="frame-706-C61RwL" data-id="58:1377">
-        <div class="frame-130-dlKqZ6" data-id="42:24669">
+    <div class="yugen screen" data-id="1:318">
+      <div class="group-580-C61RwL" data-id="1:319">
+        <div class="rectangle-396-CTAjml" data-id="1:320"></div>
+        <div class="group-581-CTAjml" data-id="1:321">
           <img
-            class="vector-26-5Nxcvc"
-            data-id="42:24670"
+            class="union-RNt1YE animate-enter"
+            data-id="1:322"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-26-1@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/union@2x.png"
+          />
+          <div class="ellipse-59-RNt1YE" data-id="1:323"></div>
+          <img
+            class="star-RNt1YE"
+            data-id="1:324"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/star@2x.png"
           /><img
-            class="vector-25-5Nxcvc"
-            data-id="42:24671"
+            class="ellipse-60-RNt1YE"
+            data-id="1:325"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-25-1@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/ellipse-60@1x.png"
           /><img
-            class="vector-27-5Nxcvc"
-            data-id="42:24672"
+            class="union-G3S0tK"
+            data-id="1:326"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-27-1@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/union-1@2x.png"
           />
-        </div>
-        <img
-          class="vector-dlKqZ6"
-          data-id="42:24469"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/vector@1x.png"
-        /><img
-          class="image-11-dlKqZ6 animate-enter"
-          data-id="45:1367"
-          show-on-scroll
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-11@1x.png"
-        />
-        <div
-          class="group-547-dlKqZ6 animate-enter1"
-          data-id="45:1454"
-          show-on-scroll
-        >
-          <div class="build-organize-tually-anywhere-r1vSAy" data-id="45:1368">
-            Build, organize, and collaborate on work in one place from virtually
-            anywhere
-          </div>
-          <div class="single-powerful-youll-ever-need-r1vSAy" data-id="45:1370">
-            SINGLE POWERFUL GROWTH APP YOU’LL EVER NEED
-          </div>
-        </div>
-      </div>
-      <div class="rectangle-400-C61RwL" data-id="52:49"></div>
-      <div class="rectangle-65-C61RwL" data-id="42:24219"></div>
-      <div class="frame-485-C61RwL" data-id="45:1444">
-        <div class="group-541-eykqzh" data-id="42:24478">
-          <div class="mountain-FgtENZ" data-id="42:24178">
-            <div class="g16-xmeKl4" data-id="42:24179">
-              <img
-                class="path28-p6Hd0h"
-                data-id="42:24180"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path28@1x.png"
-              />
-            </div>
-            <div class="g32-xmeKl4" data-id="42:24181">
-              <img
-                class="path44-Hljg2W"
-                data-id="42:24182"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/path44@1x.png"
-              />
-            </div>
-            <div class="g48-xmeKl4" data-id="42:24183">
-              <img
-                class="path60-ErXm7w"
-                data-id="42:24184"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path60@1x.png"
-              />
-            </div>
-            <div class="g64-xmeKl4" data-id="42:24185">
-              <img
-                class="path76-8jkLKb"
-                data-id="42:24186"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path76@1x.png"
-              />
-            </div>
-            <div class="g80-xmeKl4" data-id="42:24187">
-              <img
-                class="path92-j5l2fP"
-                data-id="42:24188"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path92@1x.png"
-              />
-            </div>
-            <div class="g96-xmeKl4" data-id="42:24189">
-              <img
-                class="path108-k3tgWy"
-                data-id="42:24190"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path108@2x.png"
-              />
-            </div>
-            <img
-              class="path110-xmeKl4"
-              data-id="42:24191"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path110@1x.png"
-            />
-            <div class="g114-xmeKl4" data-id="42:24192">
-              <img
-                class="path128-SQlDoh"
-                data-id="42:24193"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path128@2x.png"
-              />
-            </div>
-            <img
-              class="path130-xmeKl4"
-              data-id="42:24194"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path130@1x.png"
-            /><img
-              class="path132-xmeKl4"
-              data-id="42:24195"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path132@2x.png"
-            />
-            <div class="g136-xmeKl4" data-id="42:24196">
-              <img
-                class="path150-1vSFKh"
-                data-id="42:24197"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path150@2x.png"
-              />
-            </div>
-            <img
-              class="path152-xmeKl4"
-              data-id="42:24198"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path152@1x.png"
-            /><img
-              class="path154-xmeKl4"
-              data-id="42:24199"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/path154-1@1x.png"
-            />
-            <div class="g158-xmeKl4" data-id="42:24200">
-              <img
-                class="path172-PCyJYJ"
-                data-id="42:24201"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path172@1x.png"
-              />
-            </div>
-            <div class="g176-xmeKl4" data-id="42:24202">
-              <img
-                class="path190-Bf8v8t"
-                data-id="42:24203"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path190@2x.png"
-              />
-            </div>
-            <div class="g194-xmeKl4" data-id="42:24204">
-              <img
-                class="path208-6BRmfy"
-                data-id="42:24205"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path208@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <img
-          class="image-20-eykqzh"
-          data-id="99:1460"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd14f8916c46faf5f14e9/img/image-20@1x.png"
-        />
-      </div>
-      <div class="group-548-C61RwL animate-enter2" data-id="45:1455">
-        <div class="heal-grow-and-accomplish-S92Q8r" data-id="42:24470">
-          Heal, grow and<br />accomplish
-        </div>
-        <div class="tracking-person-nd-productivity-S92Q8r" data-id="42:24471">
-          Tracking personal and collaborative growth through emotions and
-          productivity
-        </div>
-      </div>
-      <div class="group-14-C61RwL" data-id="42:24220">
-        <div class="yugen-AX7pWk" data-id="42:24221">Yugen</div>
-      </div>
-      <div class="group-549-C61RwL" data-id="45:1456">
-        <div class="group-543-LoK6ev animate-enter5" data-id="45:1448">
-          <div
-            class="yu-gen-is-a-pro-t-to-do-further-jxXxQ1 animate-enter3"
-            data-id="45:1447"
-            show-on-scroll
-          >
-            YuGen is a productivity and self-growth tool. The motive of the app
-            is not to dynamically tell you what to do, but it’s is a reflection
-            of your day and gives you control over what to do further.
-          </div>
-          <div
-            class="work-in-peace-jxXxQ1 recoleta-regular-normal-cod-gray-48px animate-enter4"
-            data-id="42:24007"
-            show-on-scroll
-          >
-            Work in Peace
-          </div>
-        </div>
-        <img
-          class="floating-LoK6ev animate-enter6"
-          data-id="42:24176"
-          show-on-scroll
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/floating@2x.png"
-        />
-      </div>
-      <div
-        class="why-yugen-C61RwL recoleta-regular-normal-cod-gray-48px animate-enter7"
-        data-id="45:1530"
-        show-on-scroll
-      >
-        <span class="span0-FTXB9H recoleta-regular-normal-cod-gray-48px"
-          >Why </span
-        ><span class="span1-FTXB9H">Yugen?</span>
-      </div>
-      <div
-        class="group-559-C61RwL animate-enter8"
-        data-id="45:1574"
-        show-on-scroll
-      >
-        <div class="frame-699-gpQSQ3" data-id="45:1541">
-          <img
-            class="train-U6OUdv"
-            data-id="45:1565"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/train@2x.png"
-          />
-          <div
-            class="to-do-U6OUdv recoleta-regular-normal-black-40px"
-            data-id="45:1539"
-          >
-            To-Do
-          </div>
-          <div
-            class="tracking-person-gh-productivity-U6OUdv worksans-normal-black-18px"
-            data-id="45:1540"
-          >
-            Tracking personal growth through productivity
-          </div>
-        </div>
-        <div class="frame-700-gpQSQ3" data-id="45:1542">
-          <img
-            class="discovery-O4xPlN"
-            data-id="45:1568"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/discovery@2x.png"
-          />
-          <div
-            class="diary-O4xPlN recoleta-regular-normal-black-40px"
-            data-id="45:1543"
-          >
-            Diary
-          </div>
-          <div
-            class="emotional-growt-taphone-feature-O4xPlN worksans-normal-black-18px"
-            data-id="45:1544"
-          >
-            Emotional Growth and history tracking with the dictaphone feature.
-          </div>
-        </div>
-        <div class="frame-701-gpQSQ3" data-id="45:1546">
-          <img
-            class="tickets-nbhwUF"
-            data-id="45:1566"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/tickets@2x.png"
-          />
-          <div
-            class="yugen-nbhwUF recoleta-regular-normal-black-40px"
-            data-id="45:1547"
-          >
-            Yugen
-          </div>
-          <div
-            class="a-25-minute-ses-nt-productivity-nbhwUF worksans-normal-black-18px"
-            data-id="45:1548"
-          >
-            A 25-minute session of work for consistent productivity
-          </div>
-        </div>
-        <div class="frame-702-gpQSQ3" data-id="45:1549">
-          <img
-            class="tourists-LaOufS"
-            data-id="45:1569"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/tourists@2x.png"
-          />
-          <div
-            class="teams-LaOufS recoleta-regular-normal-black-40px"
-            data-id="45:1550"
-          >
-            Teams
-          </div>
-          <div
-            class="collaborative-p-ctivity-tracker-LaOufS worksans-normal-black-18px"
-            data-id="45:1551"
-          >
-            Collaborative productivity tracker
-          </div>
-        </div>
-        <div class="frame-703-gpQSQ3" data-id="45:1555">
-          <img
-            class="vacation-DXmzYo"
-            data-id="45:1563"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/vacation@2x.png"
-          />
-          <div
-            class="gamification-DXmzYo recoleta-regular-normal-black-40px"
-            data-id="45:1556"
-          >
-            Gamification
-          </div>
-          <div
-            class="with-gamificati-re-and-gg-score-DXmzYo worksans-normal-black-18px"
-            data-id="45:1557"
-          >
-            With gamification parts such as Yugen score and GG score
-          </div>
-        </div>
-        <div class="frame-704-gpQSQ3" data-id="45:1558">
-          <img
-            class="landscape-view-oIhpS0"
-            data-id="45:1564"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/landscape-view@2x.png"
-          />
-          <div
-            class="growth-oIhpS0 recoleta-regular-normal-black-40px"
-            data-id="45:1559"
-          >
-            Growth
-          </div>
-          <div
-            class="promotion-of-pr-persona-growth-oIhpS0 worksans-normal-black-18px"
-            data-id="45:1560"
-          >
-            Promotion of productivity and positive emotions is what leads to
-            persona growth
-          </div>
-        </div>
-      </div>
-      <div
-        class="group-562-C61RwL animate-enter11"
-        data-id="45:1602"
-        show-on-scroll
-      >
-        <div class="group-14-kqmEWe" data-id="45:1577">
-          <div class="group-12-Qmpzs2" data-id="45:1578">
-            <div class="ellipse-4-MLKpyy" data-id="45:1579"></div>
-            <img
-              class="mask-group-MLKpyy"
-              data-id="45:1580"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/mask-group-6@2x.png"
-            />
-          </div>
-          <div class="group-13-Qmpzs2" data-id="45:1587">
-            <h1 class="title-yEPkQh" data-id="45:1588">Yugen</h1>
-          </div>
-        </div>
-        <div class="group-561-kqmEWe" data-id="45:1600">
-          <a
-            href="https://www.figma.com/file/ZaNKgJV3gAV4gq8sK3QRNL/Yugen?node-id=42%3A23967"
-            target="_blank"
-            ><div class="frame-705-QKvJL0" data-id="45:1598">
-              <div class="checkout-our-designs-here-K7aGaS" data-id="45:1597">
-                Checkout our designs here
-              </div>
-            </div></a
-          ><a href="https://www.google.com/" target="_blank"
-            ><div class="frame-706-QKvJL0" data-id="103:1481">
-              <div class="download-app-lX15QB" data-id="103:1482">
-                Download App
-              </div>
-            </div></a
-          >
-          <div
-            class="download-the-app-now-QKvJL0 animate-enter9"
-            data-id="45:1576"
-            show-on-scroll
-          >
-            Download the app now
-          </div>
-          <div
-            class="meanwhile-QKvJL0 animate-enter10"
-            data-id="45:1599"
-            show-on-scroll
-          >
-            Meanwhile,
-          </div>
-        </div>
-      </div>
-      <div class="group-560-C61RwL" data-id="45:1596">
-        <div class="rectangle-396-g3HKGB" data-id="45:1575"></div>
-        <img
-          class="union-g3HKGB animate-enter12"
-          data-id="45:1591"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/union@2x.png"
-        />
-        <div class="ellipse-59-g3HKGB" data-id="45:1592"></div>
-        <img
-          class="star-g3HKGB"
-          data-id="45:1593"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/star@2x.png"
-        /><img
-          class="ellipse-60-g3HKGB"
-          data-id="45:1594"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/ellipse-60@1x.png"
-        /><img
-          class="union-Cla5sn"
-          data-id="45:1595"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/union-1@2x.png"
-        />
-      </div>
-      <div class="rectangle-397-C61RwL" data-id="45:1625"></div>
-      <div class="rectangle-399-C61RwL" data-id="52:25"></div>
-      <div class="rectangle-398-C61RwL" data-id="45:1627"></div>
-      <div class="frame-707-C61RwL" data-id="58:1400">
-        <div
-          class="lets-take-you-o-a-short-journey-Kzp7Wd recoleta-regular-normal-cod-gray-48px animate-enter13"
-          data-id="45:1537"
-          show-on-scroll
-        >
-          Let’s take you on a short journey
-        </div>
-        <div class="group-568-Kzp7Wd" data-id="58:1373">
-          <img
-            class="image-3-9Nx0xl animate-enter14"
-            data-id="52:12"
-            show-on-scroll
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-3@1x.png"
-          />
-          <div class="group-567-9Nx0xl" data-id="52:100">
-            <div
-              class="journal-all-the-group-features-61QJC0 recoleta-medium-white-28px animate-enter15"
-              data-id="52:22"
-              show-on-scroll
-            >
-              Journal all the way with personal and group features
-            </div>
-            <div
-              class="truely-express-y-talking-to-it-61QJC0 nunitosans-normal-white-24px"
-              data-id="53:1327"
-            >
-              Truely express your feelings to the journal by talking to it
-            </div>
-          </div>
-        </div>
-        <div class="group-571-Kzp7Wd" data-id="58:1376">
-          <img
-            class="image-1-t6AlEG animate-enter16"
-            data-id="52:13"
-            show-on-scroll
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-1@1x.png"
-          />
-          <div class="group-564-t6AlEG" data-id="52:97">
-            <div
-              class="a-personalised-to-do-Q0nZMO recoleta-medium-white-28px animate-enter17"
-              data-id="52:18"
-              show-on-scroll
-            >
-              A personalised To-Do
-            </div>
-            <div
-              class="to-dos-to-track-onthly-progress-Q0nZMO nunitosans-normal-white-24px"
-              data-id="53:1328"
-            >
-              To-Dos to track daily and monthly progress
-            </div>
-          </div>
-        </div>
-        <div class="group-570-Kzp7Wd" data-id="58:1375">
-          <img
-            class="image-2-Hd2NY5"
-            data-id="52:14"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-2@1x.png"
-          />
-          <div class="group-565-Hd2NY5" data-id="52:98">
-            <div
-              class="team-collaboration-ifxR5S recoleta-medium-white-28px animate-enter18"
-              data-id="52:20"
-              show-on-scroll
-            >
-              Team Collaboration
-            </div>
-            <div
-              class="collaborations-ctivity-metrics-ifxR5S nunitosans-normal-white-24px"
-              data-id="52:51"
-            >
-              Collaborations with team and project productivity metrics
-            </div>
-          </div>
-        </div>
-        <div class="group-569-Kzp7Wd" data-id="58:1374">
-          <img
-            class="image-4-YNCD05"
-            data-id="52:15"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-4@1x.png"
-          />
-          <div class="group-566-YNCD05" data-id="52:99">
-            <div
-              class="gamify-your-experience-U135jI recoleta-medium-white-28px animate-enter19"
-              data-id="52:21"
-              show-on-scroll
-            >
-              Gamify your experience
-            </div>
-            <div
-              class="gg-score-and-yu-n-and-intuitive-U135jI nunitosans-normal-white-24px"
-              data-id="52:52"
-            >
-              GG score and Yugen to make your productivity trackingfun and
-              intuitive.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="group-554-C61RwL animate-enter21"
-        data-id="45:1505"
-        show-on-scroll
-      >
-        <div
-          class="tech-stack-jCcFz7 recoleta-regular-normal-cod-gray-48px animate-enter20"
-          data-id="45:1458"
-          show-on-scroll
-        >
-          Tech stack
-        </div>
-        <div class="frame-486-jCcFz7" data-id="45:1460">
-          <div class="group-550-XWvYir" data-id="45:1478">
-            <div class="simple-iconsts-node-2PHdm8" data-id="45:1468">
-              <img
-                class="vector-CvikQ2"
-                data-id="45:1469"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-82@2x.png"
-              />
-            </div>
-            <div class="fa-brandsnode-2PHdm8" data-id="45:1470">
-              <img
-                class="vector-Io3CC9"
-                data-id="45:1471"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-83@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-487-jCcFz7" data-id="45:1479">
-          <div class="grommet-iconsfigma-6LEltU" data-id="45:1461">
-            <div class="group-ycAXJ8" data-id="45:1462">
-              <img
-                class="vector-HhEcmI"
-                data-id="45:1463"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-84@2x.png"
-              /><img
-                class="vector-bfUX5m"
-                data-id="45:1464"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-85@2x.png"
-              /><img
-                class="vector-Svqa5X"
-                data-id="45:1465"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-86@2x.png"
-              /><img
-                class="vector-gbTRsz"
-                data-id="45:1466"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-87@2x.png"
-              /><img
-                class="vector-xEAiGY"
-                data-id="45:1467"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-88@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-488-jCcFz7" data-id="45:1486">
-          <div class="logosflutter-xqnum0" data-id="45:1472">
-            <img
-              class="vector-FfTe2l"
-              data-id="45:1473"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-89@2x.png"
-            /><img
-              class="vector-GSee4F"
-              data-id="45:1474"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-90@2x.png"
-            /><img
-              class="vector-DpnTTN"
-              data-id="45:1475"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-91@2x.png"
-            /><img
-              class="vector-qaqE3m"
-              data-id="45:1476"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-92@2x.png"
-            /><img
-              class="vector-6kztxm"
-              data-id="45:1477"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-93@2x.png"
-            />
-          </div>
         </div>
       </div>
       <img
         class="rectangle-67-C61RwL"
-        data-id="45:1393"
+        data-id="1:327"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/rectangle-67@1x.png"
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/rectangle-67@1x.png"
       />
-      <div class="group-546-C61RwL animate-enter23" data-id="45:1453">
-        <div class="what-is-yugen-yzfg5m" data-id="45:1394">WHAT IS YUGEN?</div>
+      <div class="group-546-C61RwL animate-enter2" data-id="1:328">
+        <div class="what-is-yugen-yzfg5m" data-id="1:329">What Is Yugen?</div>
         <div
-          class="yu-gen-is-a-pro-to-make-use-of-yzfg5m worksans-normal-white-20px animate-enter22"
-          data-id="45:1392"
+          class="yu-gen-is-a-pro-to-make-use-of-yzfg5m worksans-normal-white-20px animate-enter1"
+          data-id="1:330"
           show-on-scroll
         >
           <span class="span0-4X3RBw worksans-normal-white-20px"
@@ -3060,10 +2786,10 @@
           ><span class="span1-4X3RBw worksans-normal-white-20px">.</span>
         </div>
       </div>
-      <div class="group-563-C61RwL animate-enter24" data-id="52:26">
+      <div class="group-563-C61RwL animate-enter3" data-id="1:331">
         <div
           class="human-psycholog-ims-to-solve-it-fyjDSQ worksans-normal-white-20px"
-          data-id="45:1443"
+          data-id="1:332"
         >
           Human psychology is an intriguing subject. Sometimes these small
           things add up and impact one&#39;s life in the longer term.<br /><br />In
@@ -3073,33 +2799,732 @@
           are unable to tap the power of their productivity and that is a major
           issue and Yugen aims to solve it
         </div>
-        <div class="problems-fyjDSQ" data-id="42:24217">Problems.</div>
+        <div class="problems-fyjDSQ" data-id="1:333">Problems.</div>
       </div>
       <img
         class="image-13-C61RwL"
-        data-id="58:1468"
+        data-id="1:334"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/image-13-1@1x.png"
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/image-13@1x.png"
+      /><img
+        class="rectangle-402-C61RwL"
+        data-id="1:335"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/rectangle-402@1x.png"
       />
+      <div class="rectangle-401-C61RwL" data-id="1:336"></div>
+      <div class="frame-706-C61RwL" data-id="1:337">
+        <div class="frame-130-dlKqZ6" data-id="1:338">
+          <img
+            class="vector-26-5Nxcvc"
+            data-id="1:339"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-26-3@1x.png"
+          /><img
+            class="vector-25-5Nxcvc"
+            data-id="1:340"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-25-3@1x.png"
+          /><img
+            class="vector-27-5Nxcvc"
+            data-id="1:341"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-27-3@1x.png"
+          />
+        </div>
+        <img
+          class="vector-dlKqZ6"
+          data-id="1:342"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/vector@1x.png"
+        /><img
+          class="image-11-dlKqZ6 animate-enter4"
+          data-id="1:343"
+          show-on-scroll
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-11@1x.png"
+        />
+        <div
+          class="group-547-dlKqZ6 animate-enter5"
+          data-id="1:344"
+          show-on-scroll
+        >
+          <div class="build-organize-tually-anywhere-r1vSAy" data-id="1:345">
+            Build, organize, and collaborate on work in one place from virtually
+            anywhere
+          </div>
+          <div class="single-powerful-youll-ever-need-r1vSAy" data-id="1:346">
+            SINGLE POWERFUL GROWTH APP YOU’LL EVER NEED
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-400-C61RwL" data-id="1:347"></div>
+      <div class="rectangle-65-C61RwL" data-id="1:348"></div>
+      <div class="frame-485-C61RwL" data-id="1:349">
+        <div class="group-541-eykqzh" data-id="1:350">
+          <div class="mountain-FgtENZ" data-id="1:351">
+            <div class="g16-xmeKl4" data-id="1:352">
+              <img
+                class="path28-p6Hd0h"
+                data-id="1:353"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path28@1x.png"
+              />
+            </div>
+            <div class="g32-xmeKl4" data-id="1:354">
+              <img
+                class="path44-Hljg2W"
+                data-id="1:355"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/path44@1x.png"
+              />
+            </div>
+            <div class="g48-xmeKl4" data-id="1:356">
+              <img
+                class="path60-ErXm7w"
+                data-id="1:357"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/path60@1x.png"
+              />
+            </div>
+            <div class="g64-xmeKl4" data-id="1:358">
+              <img
+                class="path76-8jkLKb"
+                data-id="1:359"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/path76@1x.png"
+              />
+            </div>
+            <div class="g80-xmeKl4" data-id="1:360">
+              <img
+                class="path92-j5l2fP"
+                data-id="1:361"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/path92-1@1x.png"
+              />
+            </div>
+            <div class="g96-xmeKl4" data-id="1:362">
+              <img
+                class="path108-k3tgWy"
+                data-id="1:363"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/path108-1@2x.png"
+              />
+            </div>
+            <img
+              class="path110-xmeKl4"
+              data-id="1:364"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/path110-1@1x.png"
+            />
+            <div class="g114-xmeKl4" data-id="1:365">
+              <img
+                class="path128-SQlDoh"
+                data-id="1:366"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/path128@2x.png"
+              />
+            </div>
+            <img
+              class="path130-xmeKl4"
+              data-id="1:367"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path130@1x.png"
+            /><img
+              class="path132-xmeKl4"
+              data-id="1:368"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path132@2x.png"
+            />
+            <div class="g136-xmeKl4" data-id="1:369">
+              <img
+                class="path150-1vSFKh"
+                data-id="1:370"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path150@2x.png"
+              />
+            </div>
+            <img
+              class="path152-xmeKl4"
+              data-id="1:371"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path152@1x.png"
+            /><img
+              class="path154-xmeKl4"
+              data-id="1:372"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/path154-1@1x.png"
+            />
+            <div class="g158-xmeKl4" data-id="1:373">
+              <img
+                class="path172-PCyJYJ"
+                data-id="1:374"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path172@1x.png"
+              />
+            </div>
+            <div class="g176-xmeKl4" data-id="1:375">
+              <img
+                class="path190-Bf8v8t"
+                data-id="1:376"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/path190-1@2x.png"
+              />
+            </div>
+            <div class="g194-xmeKl4" data-id="1:377">
+              <img
+                class="path208-6BRmfy"
+                data-id="1:378"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/path208-1@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          class="image-20-eykqzh"
+          data-id="1:379"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/image-20@1x.png"
+        />
+      </div>
+      <div class="group-548-C61RwL animate-enter6" data-id="1:380">
+        <h1 class="heal-grow-and-accomplish-S92Q8r" data-id="1:381">
+          Heal, grow and<br />accomplish
+        </h1>
+        <div class="tracking-person-nd-productivity-S92Q8r" data-id="1:382">
+          Tracking personal and collaborative growth through emotions and
+          productivity
+        </div>
+      </div>
+      <div class="group-14-C61RwL" data-id="1:383">
+        <div class="yugen-AX7pWk" data-id="1:384">Yugen</div>
+      </div>
+      <div class="group-549-C61RwL" data-id="1:385">
+        <div class="group-543-LoK6ev animate-enter9" data-id="1:386">
+          <div
+            class="yu-gen-is-a-pro-t-to-do-further-jxXxQ1 animate-enter7"
+            data-id="1:387"
+            show-on-scroll
+          >
+            YuGen is a productivity and self-growth tool. The motive of the app
+            is not to dynamically tell you what to do, but it’s is a reflection
+            of your day and gives you control over what to do further.
+          </div>
+          <div
+            class="work-in-peace-jxXxQ1 recoleta-regular-normal-cod-gray-48px animate-enter8"
+            data-id="1:388"
+            show-on-scroll
+          >
+            Work in Peace
+          </div>
+        </div>
+        <img
+          class="floating-LoK6ev animate-enter10"
+          data-id="1:389"
+          show-on-scroll
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/floating@2x.png"
+        />
+      </div>
       <div
-        class="yugen-timer-C61RwL animate-enter25"
-        data-id="95:580"
+        class="why-yugen-C61RwL recoleta-regular-normal-cod-gray-48px animate-enter11"
+        data-id="1:390"
         show-on-scroll
       >
-        Yugen timer
+        <span class="span0-FTXB9H recoleta-regular-normal-cod-gray-48px"
+          >Why </span
+        ><span class="span1-FTXB9H">Yugen?</span>
+      </div>
+      <div
+        class="group-559-C61RwL animate-enter12"
+        data-id="1:391"
+        show-on-scroll
+      >
+        <div class="frame-699-gpQSQ3" data-id="1:392">
+          <img
+            class="train-U6OUdv"
+            data-id="1:393"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/train@2x.png"
+          />
+          <div
+            class="to-do-U6OUdv recoleta-regular-normal-black-40px"
+            data-id="1:394"
+          >
+            To-Do
+          </div>
+          <div
+            class="tracking-person-gh-productivity-U6OUdv worksans-normal-black-18px"
+            data-id="1:395"
+          >
+            Tracking personal growth through productivity
+          </div>
+        </div>
+        <div class="frame-700-gpQSQ3" data-id="1:396">
+          <img
+            class="discovery-O4xPlN"
+            data-id="1:397"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/discovery@2x.png"
+          />
+          <div
+            class="diary-O4xPlN recoleta-regular-normal-black-40px"
+            data-id="1:398"
+          >
+            Diary
+          </div>
+          <div
+            class="emotional-growt-taphone-feature-O4xPlN worksans-normal-black-18px"
+            data-id="1:399"
+          >
+            Emotional Growth and history tracking with the dictaphone feature.
+          </div>
+        </div>
+        <div class="frame-701-gpQSQ3" data-id="1:400">
+          <img
+            class="tickets-nbhwUF"
+            data-id="1:401"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/tickets@2x.png"
+          />
+          <div
+            class="yugen-nbhwUF recoleta-regular-normal-black-40px"
+            data-id="1:402"
+          >
+            Yugen
+          </div>
+          <div
+            class="a-25-minute-ses-nt-productivity-nbhwUF worksans-normal-black-18px"
+            data-id="1:403"
+          >
+            A 25-minute session of work for consistent productivity
+          </div>
+        </div>
+        <div class="frame-702-gpQSQ3" data-id="1:404">
+          <img
+            class="tourists-LaOufS"
+            data-id="1:405"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/tourists-1@2x.png"
+          />
+          <div
+            class="teams-LaOufS recoleta-regular-normal-black-40px"
+            data-id="1:406"
+          >
+            Teams
+          </div>
+          <div
+            class="collaborative-p-ctivity-tracker-LaOufS worksans-normal-black-18px"
+            data-id="1:407"
+          >
+            Collaborative productivity tracker
+          </div>
+        </div>
+        <div class="frame-703-gpQSQ3" data-id="1:408">
+          <img
+            class="vacation-DXmzYo"
+            data-id="1:409"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vacation@2x.png"
+          />
+          <div
+            class="gamification-DXmzYo recoleta-regular-normal-black-40px"
+            data-id="1:410"
+          >
+            Gamification
+          </div>
+          <div
+            class="with-gamificati-re-and-gg-score-DXmzYo worksans-normal-black-18px"
+            data-id="1:411"
+          >
+            With gamification parts such as Yugen score and GG score
+          </div>
+        </div>
+        <div class="frame-704-gpQSQ3" data-id="1:412">
+          <img
+            class="landscape-view-oIhpS0"
+            data-id="1:413"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/landscape-view@2x.png"
+          />
+          <div
+            class="growth-oIhpS0 recoleta-regular-normal-black-40px"
+            data-id="1:414"
+          >
+            Growth
+          </div>
+          <div
+            class="promotion-of-pr-persona-growth-oIhpS0 worksans-normal-black-18px"
+            data-id="1:415"
+          >
+            Promotion of productivity and positive emotions is what leads to
+            persona growth
+          </div>
+        </div>
+      </div>
+      <div
+        class="frame-562-C61RwL animate-enter14"
+        data-id="1:416"
+        show-on-scroll
+      >
+        <div class="group-14-Ed4Aol" data-id="1:417">
+          <div class="group-12-HnEH90" data-id="1:418">
+            <div class="ellipse-4-NPza0I" data-id="1:419"></div>
+            <img
+              class="mask-group-NPza0I"
+              data-id="1:420"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/mask-group-1@2x.png"
+            />
+          </div>
+          <div class="group-13-HnEH90" data-id="1:427">
+            <div class="yugen-G6a8bS" data-id="1:428">Yugen</div>
+          </div>
+        </div>
+        <div class="group-561-Ed4Aol" data-id="1:429">
+          <a
+            href="https://www.figma.com/file/ZaNKgJV3gAV4gq8sK3QRNL/Yugen?node-id=42%3A23967"
+            target="_blank"
+            ><div class="frame-705-c8E1Fx" data-id="1:430">
+              <div class="checkout-our-designs-here-Yy4Vjx" data-id="1:431">
+                Checkout our designs here
+              </div>
+            </div></a
+          ><a href="https://github.com/DarthBenro008/yugen" target="_blank"
+            ><div class="frame-706-c8E1Fx" data-id="1:432">
+              <div class="checkout-the-app-now-hpFXFR" data-id="1:433">
+                Checkout the app now
+              </div>
+            </div></a
+          >
+          <div
+            class="meanwhile-c8E1Fx animate-enter13"
+            data-id="1:434"
+            show-on-scroll
+          >
+            Meanwhile,
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-397-C61RwL" data-id="1:435"></div>
+      <div class="rectangle-399-C61RwL" data-id="1:436"></div>
+      <div class="rectangle-398-C61RwL" data-id="1:437"></div>
+      <div class="frame-707-C61RwL" data-id="1:438">
+        <div
+          class="lets-take-you-o-a-short-journey-Kzp7Wd animate-enter15"
+          data-id="1:439"
+          show-on-scroll
+        >
+          Let’s take you on a short journey
+        </div>
+        <div class="group-568-Kzp7Wd" data-id="1:440">
+          <img
+            class="image-3-9Nx0xl animate-enter16"
+            data-id="1:441"
+            show-on-scroll
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/image-3@1x.png"
+          />
+          <div class="group-567-9Nx0xl" data-id="1:442">
+            <div
+              class="journal-all-the-group-features-61QJC0 recoleta-medium-white-28px animate-enter17"
+              data-id="1:443"
+              show-on-scroll
+            >
+              Journal all the way with personal and group features
+            </div>
+            <div
+              class="truely-express-y-talking-to-it-61QJC0 nunitosans-normal-white-24px"
+              data-id="1:444"
+            >
+              Truely express your feelings to the journal by talking to it
+            </div>
+          </div>
+        </div>
+        <div class="group-571-Kzp7Wd" data-id="1:445">
+          <img
+            class="image-1-t6AlEG animate-enter18"
+            data-id="1:446"
+            show-on-scroll
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/image-1-1@1x.png"
+          />
+          <div class="group-564-t6AlEG" data-id="1:447">
+            <div
+              class="a-personalised-to-do-Q0nZMO recoleta-medium-white-28px animate-enter19"
+              data-id="1:448"
+              show-on-scroll
+            >
+              A personalised To-Do
+            </div>
+            <div
+              class="to-dos-to-track-onthly-progress-Q0nZMO nunitosans-normal-white-24px"
+              data-id="1:449"
+            >
+              To-Dos to track daily and monthly progress
+            </div>
+          </div>
+        </div>
+        <div class="group-570-Kzp7Wd" data-id="1:450">
+          <img
+            class="image-2-Hd2NY5"
+            data-id="1:451"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/image-2@1x.png"
+          />
+          <div class="group-565-Hd2NY5" data-id="1:452">
+            <div
+              class="team-collaboration-ifxR5S recoleta-medium-white-28px animate-enter20"
+              data-id="1:453"
+              show-on-scroll
+            >
+              Team Collaboration
+            </div>
+            <div
+              class="collaborations-ctivity-metrics-ifxR5S nunitosans-normal-white-24px"
+              data-id="1:454"
+            >
+              Collaborations with team and project productivity metrics
+            </div>
+          </div>
+        </div>
+        <div class="group-569-Kzp7Wd" data-id="1:455">
+          <img
+            class="image-4-YNCD05"
+            data-id="1:456"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/image-4-1@1x.png"
+          />
+          <div class="group-566-YNCD05" data-id="1:457">
+            <div
+              class="gamify-your-experience-U135jI recoleta-medium-white-28px animate-enter21"
+              data-id="1:458"
+              show-on-scroll
+            >
+              Gamify your experience
+            </div>
+            <div
+              class="gg-score-and-yu-n-and-intuitive-U135jI nunitosans-normal-white-24px"
+              data-id="1:459"
+            >
+              GG score and Yugen to make your productivity trackingfun and
+              intuitive.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group-554-C61RwL animate-enter23"
+        data-id="1:460"
+        show-on-scroll
+      >
+        <div
+          class="tech-stack-jCcFz7 recoleta-regular-normal-cod-gray-48px animate-enter22"
+          data-id="1:461"
+          show-on-scroll
+        >
+          Tech stack
+        </div>
+        <div class="frame-486-jCcFz7" data-id="1:462">
+          <div class="group-550-XWvYir" data-id="1:463">
+            <div class="simple-iconsts-node-2PHdm8" data-id="1:464">
+              <img
+                class="vector-CvikQ2"
+                data-id="1:465"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-1@2x.png"
+              />
+            </div>
+            <div class="fa-brandsnode-2PHdm8" data-id="1:466">
+              <img
+                class="vector-Io3CC9"
+                data-id="1:467"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-18@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-487-jCcFz7" data-id="1:468">
+          <div class="grommet-iconsfigma-6LEltU" data-id="1:469">
+            <div class="group-ycAXJ8" data-id="1:470">
+              <img
+                class="vector-HhEcmI"
+                data-id="1:471"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-3@2x.png"
+              /><img
+                class="vector-bfUX5m"
+                data-id="1:472"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-4@2x.png"
+              /><img
+                class="vector-Svqa5X"
+                data-id="1:473"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-5@2x.png"
+              /><img
+                class="vector-gbTRsz"
+                data-id="1:474"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-6@2x.png"
+              /><img
+                class="vector-xEAiGY"
+                data-id="1:475"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-23@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-488-jCcFz7" data-id="1:476">
+          <div class="logosflutter-xqnum0" data-id="1:477">
+            <img
+              class="vector-FfTe2l"
+              data-id="1:478"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-8@2x.png"
+            /><img
+              class="vector-GSee4F"
+              data-id="1:479"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-9@2x.png"
+            /><img
+              class="vector-DpnTTN"
+              data-id="1:480"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-10@2x.png"
+            /><img
+              class="vector-qaqE3m"
+              data-id="1:481"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-11@2x.png"
+            /><img
+              class="vector-6kztxm"
+              data-id="1:482"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/vector-12@2x.png"
+            />
+          </div>
+        </div>
       </div>
       <img
-        class="group-573-C61RwL animate-enter26"
-        data-id="95:588"
+        class="group-573-C61RwL animate-enter24"
+        data-id="1:483"
         show-on-scroll
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/group-573-1@1x.png"
-      /><img
-        class="image-8-C61RwL"
-        data-id="101:1613"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/image-8@1x.png"
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/group-573-3@1x.png"
       />
+      <div class="group-579-C61RwL" data-id="1:487">
+        <div class="frame-710-GbV2FX" data-id="1:488">
+          <img
+            class="women-power-business-awpGkV"
+            data-id="1:489"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/women-power-business@2x.png"
+          />
+          <div class="frame-711-awpGkV" data-id="1:490">
+            <div
+              class="business-model-UzCuG3 recoleta-regular-normal-cod-gray-48px animate-enter25"
+              data-id="1:491"
+              show-on-scroll
+            >
+              Business model
+            </div>
+            <div class="we-plan-to-foll-of-the-product-UzCuG3" data-id="1:492">
+              - We plan to follow a Freemium Business Model.<br /><br />- An
+              operating strategy to create an intended impact on a personal
+              basis.<br /><br />- Reasonable paid monthly and annual
+              subscription for the team based collaborative features.<br /><br />-
+              A one week free trial for a higher customer acquisition rate.<br /><br />-
+              Presenting the idea to organizations as an enterprise plan,
+              requiring a B2C aspect of the product
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-710-C61RwL" data-id="1:493">
+        <div
+          class="who-is-this-app-for-iZ76HW animate-enter26"
+          data-id="1:494"
+          show-on-scroll
+        >
+          Who is this app for?
+        </div>
+        <div class="frame-713-iZ76HW" data-id="1:495">
+          <div class="frame-713-tfNhE9" data-id="1:496">
+            <div class="students-sJgWRT" data-id="1:497">Students</div>
+            <div class="group-574-sJgWRT" data-id="1:498">
+              <img
+                class="vector-FDZPW0"
+                data-id="1:499"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5f9c1a3b27f28471b674/img/vector-32@2x.png"
+              /><img
+                class="women-power-standing-FDZPW0"
+                data-id="1:500"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/women-power-standing@2x.png"
+              />
+            </div>
+          </div>
+          <div class="frame-714-tfNhE9" data-id="1:501">
+            <div class="professionals-O4mycJ" data-id="1:502">
+              Professionals
+            </div>
+            <div class="group-574-O4mycJ" data-id="1:503">
+              <img
+                class="fresh-folk-teamwork-DO168H"
+                data-id="1:504"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/fresh-folk-teamwork@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-578-C61RwL" data-id="1:505">
+        <div class="frame-708-HnQ0LK" data-id="1:506">
+          <div class="frame-709-TWLI1A" data-id="1:507">
+            <div
+              class="future-aspect-of-yugen-LdCHeg animate-enter27"
+              data-id="1:508"
+              show-on-scroll
+            >
+              Future aspect of Yugen
+            </div>
+            <div class="watch-os-and-de-of-its-members-LdCHeg" data-id="1:509">
+              Watch OS and Desktop App for easy access anywhere anytime.<br /><br />Actions
+              on google support for instant access on assistant and smart home
+              devices.<br /><br />Integration of services like Zoom and other
+              bots for a quick access bar.<br /><br />Giving the user a
+              personalized environment using smart home lighting to have a
+              mental effect of a Pomodoro timer.<br /><br />Integrating more
+              user metrics for teams to evaluate the performance of its members.
+            </div>
+          </div>
+          <img
+            class="squiggles-colorful-TWLI1A"
+            data-id="1:510"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608e5ed86397664062f0b84f/img/squiggles-colorful-1@1x.png"
+          />
+        </div>
+      </div>
+      <div class="yugen-timer-C61RwL" data-id="1:511">Yugen Timer</div>
+      <div class="group-582-C61RwL" data-id="1:578">
+        <div class="check-us-out-at-YD2fMR" data-id="1:512">
+          Check us out at
+        </div>
+        <div class="frame-715-YD2fMR" data-id="1:513">
+          <a href="https://yugen.vercel.app/" target="_blank"
+            ><div class="yugenbenrotech-Shaqu0" data-id="1:514">
+              yugen.benro.tech/
+            </div></a
+          >
+        </div>
+      </div>
     </div>
     <script src="launchpad-js/launchpad-banner.js" async></script>
     <script
