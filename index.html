@@ -1,12 +1,3106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>YuGen - Heal, Grow, Accomplish</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./favicon.png"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <script id="anima-hotspots-script" src="hotspots.js"></script>
+    <script id="anima-overrides-script" src="overrides.js"></script>
+    <script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script>
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500|Nunito+Sans:400");
+
+      @font-face {
+        font-family: "Recoleta-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5c508d9ee900f80009ddb0bf/Recoleta Regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "Recoleta-Light";
+        font-style: normal;
+        font-weight: 300;
+        src: url("https://anima-uploads.s3.amazonaws.com/5d49e2ded0cf9bced7956c27/Latinotype - Recoleta Light.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "Recoleta-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        src: url("https://anima-uploads.s3.amazonaws.com/5cd44d53f1f707000ab8cb3b/recoleta-semibold.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "Recoleta-Medium";
+        font-style: normal;
+        font-weight: 500;
+        src: url("https://anima-uploads.s3.amazonaws.com/5c4fa07636c3b10009184420/Latinotype - Recoleta Medium.otf")
+          format("opentype");
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .align-self-flex-center {
+        align-self: flex-center;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        pointer-events: none;
+      }
+      .component-wrapper a {
+        text-decoration: none;
+        display: contents;
+        pointer-events: auto;
+      }
+      .component-wrapper a *,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe {
+        pointer-events: auto;
+      }
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+      .container-center-vertical {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+      }
+      .container-center-vertical > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+      .full-height-a {
+        height: 100%;
+      }
+      .full-width-a {
+        width: 100%;
+      }
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+      .overlay.animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+      .overlay.animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+      .screen * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      input:focus {
+        outline: none;
+      }
+
+      :root {
+        --black: #000000;
+        --cod-gray: #0a0a0a;
+        --royal-blue: #4453de;
+        --white: #ffffff;
+
+        --font-size-108_2px: 108.2px;
+        --font-size-24_1px: 24.1px;
+        --font-size-61_7px: 61.7px;
+        --font-size-l: 24px;
+        --font-size-m: 20px;
+        --font-size-s: 18px;
+        --font-size-xl: 32px;
+        --font-size-xs: 16px;
+        --font-size-xxl: 36px;
+        --font-size-xxxl: 40px;
+        --font-size-xxxxl: 48px;
+        --font-size-xxxxxl: 80px;
+
+        --font-family-nunito_sans: "Nunito Sans", Helvetica;
+        --font-family-recoleta-light: "Recoleta-Light", Helvetica;
+        --font-family-recoleta-medium: "Recoleta-Medium", Helvetica;
+        --font-family-recoleta-regular: "Recoleta-Regular", Helvetica;
+        --font-family-recoleta-semibold: "Recoleta-SemiBold", Helvetica;
+        --font-family-work_sans: "Work Sans", Helvetica;
+      }
+      .recoleta-regular-normal-black-40px {
+        color: var(--black);
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .worksans-normal-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .recoleta-regular-normal-cod-gray-48px {
+        color: var(--cod-gray);
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxxl);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .worksans-normal-white-20px {
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .recoleta-medium-white-36px {
+        color: var(--white);
+        font-family: var(--font-family-recoleta-medium);
+        font-size: var(--font-size-xxl);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .nunitosans-normal-white-24px {
+        color: var(--white);
+        font-family: var(--font-family-nunito_sans);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      /* screen - yugen */
+
+      .yugen {
+        background-color: var(--white);
+        height: 100vh;
+        margin: 0px;
+        min-height: 9416px;
+        min-width: 1440px;
+        mix-blend-mode: normal;
+        overflow: hidden;
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .yugen .a-25-minute-ses-nt-productivity-nbhwUF {
+        background-color: transparent;
+        height: auto;
+        left: 18px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 382px;
+        width: 266px;
+      }
+      .yugen .a-personalised-to-do-Q0nZMO {
+        background-color: transparent;
+        bottom: 98px;
+        display: block;
+        height: auto;
+        left: calc(50% - 179px);
+        letter-spacing: 0px;
+        line-height: 39.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .animate-enter {
+        animation: animate-enter-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter1 {
+        animation: animate-enter1-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter10 {
+        animation: animate-enter10-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter11 {
+        animation: animate-enter11-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter12 {
+        animation: animate-enter12-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter13 {
+        animation: animate-enter13-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter14 {
+        animation: animate-enter14-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter15 {
+        animation: animate-enter15-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter16 {
+        animation: animate-enter16-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter17 {
+        animation: animate-enter17-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter18 {
+        animation: animate-enter18-frames 0.4s ease-in-out 2s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter19 {
+        animation: animate-enter19-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter2 {
+        animation: animate-enter2-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter20 {
+        animation: animate-enter20-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter21 {
+        animation: animate-enter21-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter22 {
+        animation: animate-enter22-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .animate-enter23 {
+        animation: animate-enter23-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter24 {
+        animation: animate-enter24-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter25 {
+        animation: animate-enter25-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter3 {
+        animation: animate-enter3-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .animate-enter4 {
+        animation: animate-enter4-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter5 {
+        animation: animate-enter5-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter6 {
+        animation: animate-enter6-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter7 {
+        animation: animate-enter7-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .animate-enter8 {
+        animation: animate-enter8-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .animate-enter9 {
+        animation: animate-enter9-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .app-coming-really-soon-QKvJL0 {
+        background-color: transparent;
+        bottom: 293px;
+        color: var(--cod-gray);
+        display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xxxl);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 223px);
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .build-organize-tually-anywhere-r1vSAy {
+        background-color: transparent;
+        color: #545454;
+        font-family: var(--font-family-recoleta-medium);
+        font-size: var(--font-size-xl);
+        font-weight: 500;
+        height: auto;
+        left: calc(50% - 262px);
+        letter-spacing: 0px;
+        line-height: 55.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 48px;
+        width: 522px;
+      }
+      .yugen .checkout-our-designs-here-K7aGaS {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+        height: auto;
+        left: 24px;
+        letter-spacing: 0px;
+        line-height: 22.1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 24px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .collaborations-ctivity-metrics-ifxR5S {
+        background-color: transparent;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 34.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 74px;
+        width: 357px;
+      }
+      .yugen .collaborative-p-ctivity-tracker-LaOufS {
+        background-color: transparent;
+        height: auto;
+        left: 18px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 378px;
+        width: 266px;
+      }
+      .yugen .diary-O4xPlN {
+        background-color: transparent;
+        height: auto;
+        left: 102px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 307px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .discovery-O4xPlN {
+        background-color: transparent;
+        height: 230px;
+        left: 36px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 53px;
+        width: 229px;
+      }
+      .yugen .ellipse-4-MLKpyy {
+        background-color: #eb7288;
+        border-radius: 125.94055938720703px;
+        bottom: 0px;
+        height: 252px;
+        left: calc(50% - 126px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 252px;
+      }
+      .yugen .ellipse-59-g3HKGB {
+        background-color: #1f1f1f;
+        border-radius: 97.0465087890625px;
+        bottom: 299px;
+        height: 194px;
+        left: calc(50% + 40px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 194px;
+      }
+      .yugen .ellipse-60-g3HKGB {
+        background-color: transparent;
+        bottom: 37px;
+        height: 281px;
+        left: calc(50% - 32px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 556px;
+      }
+      .yugen .emotional-growt-taphone-feature-O4xPlN {
+        background-color: transparent;
+        height: auto;
+        left: 18px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 375px;
+        width: 266px;
+      }
+      .yugen .fa-brandsnode-2PHdm8 {
+        background-color: transparent;
+        height: 102px;
+        left: 112px;
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 128px;
+      }
+      .yugen .floating-LoK6ev {
+        background-color: transparent;
+        display: block;
+        height: 495px;
+        left: calc(50% + 92px);
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        width: 494px;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .frame-130-dlKqZ6 {
+        background-color: transparent;
+        height: 180px;
+        left: -63px;
+        mix-blend-mode: normal;
+        opacity: 0.4;
+        position: absolute;
+        top: 311px;
+        transform: rotate(139.95deg);
+        width: 1033px;
+      }
+      .yugen .frame-485-C61RwL {
+        background-color: transparent;
+        height: 1318px;
+        left: -465px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -114px;
+        width: calc(100% + 1031px);
+      }
+      .yugen .frame-486-jCcFz7 {
+        background-color: var(--white);
+        border-radius: 6px;
+        box-shadow: 0px 6px 30px #cecece42;
+        height: 300px;
+        left: calc(50% - 551px);
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: absolute;
+        top: 180px;
+        width: 300px;
+      }
+      .yugen .frame-487-jCcFz7 {
+        background-color: var(--white);
+        border-radius: 6px;
+        box-shadow: 0px 6px 30px #cecece42;
+        height: 300px;
+        left: calc(50% - 151px);
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: absolute;
+        top: 180px;
+        width: 300px;
+      }
+      .yugen .frame-488-jCcFz7 {
+        background-color: var(--white);
+        border-radius: 6px;
+        box-shadow: 0px 6px 30px #cecece42;
+        height: 300px;
+        left: calc(50% + 249px);
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: absolute;
+        top: 180px;
+        width: 300px;
+      }
+      .yugen .frame-699-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% - 532px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 0px;
+        width: 300px;
+      }
+      .yugen .frame-700-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% - 150px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 0px;
+        width: 300px;
+      }
+      .yugen .frame-701-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% + 232px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 0px;
+        width: 300px;
+      }
+      .yugen .frame-702-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% - 532px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 532px;
+        width: 300px;
+      }
+      .yugen .frame-703-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% - 150px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 532px;
+        width: 300px;
+      }
+      .yugen .frame-704-gpQSQ3 {
+        background-color: var(--white);
+        border-radius: 6px;
+        height: 500px;
+        left: calc(50% + 232px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 532px;
+        width: 300px;
+      }
+      .yugen .frame-705-QKvJL0 {
+        background-color: var(--royal-blue);
+        border-radius: 6px;
+        bottom: 0px;
+        box-shadow: 0px 5px 25px #4454de80;
+        cursor: pointer;
+        height: 70px;
+        left: calc(50% - 223px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 258px;
+      }
+      .yugen .frame-706-C61RwL {
+        background-color: transparent;
+        height: 943px;
+        left: calc(50% - 999px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 875px;
+        width: 1860px;
+      }
+      .yugen .frame-707-C61RwL {
+        background-color: transparent;
+        height: 1968px;
+        left: calc(50% - 617px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 6115px;
+        width: 1239px;
+      }
+      .yugen .g114-xmeKl4 {
+        background-color: transparent;
+        height: 258px;
+        left: 1491px;
+        position: absolute;
+        top: calc(50% - 491px);
+        width: calc(100% - 2228px);
+      }
+      .yugen .g136-xmeKl4 {
+        background-color: transparent;
+        height: 135px;
+        left: 448px;
+        position: absolute;
+        top: calc(50% - 333px);
+        width: calc(100% - 2472px);
+      }
+      .yugen .g158-xmeKl4 {
+        background-color: transparent;
+        height: 469px;
+        left: 907px;
+        position: absolute;
+        top: calc(50% - 640px);
+        width: calc(100% - 2117px);
+      }
+      .yugen .g16-xmeKl4 {
+        background-color: transparent;
+        height: 1639px;
+        left: 23px;
+        position: absolute;
+        top: calc(50% - 819px);
+        width: calc(100% - 237px);
+      }
+      .yugen .g176-xmeKl4 {
+        background-color: transparent;
+        height: 177px;
+        left: 724px;
+        position: absolute;
+        top: calc(50% - 414px);
+        width: calc(100% - 2420px);
+      }
+      .yugen .g194-xmeKl4 {
+        background-color: transparent;
+        height: 209px;
+        left: 902px;
+        position: absolute;
+        top: calc(50% - 460px);
+        width: calc(100% - 2461px);
+      }
+      .yugen .g32-xmeKl4 {
+        background-color: transparent;
+        height: 276px;
+        left: 478px;
+        position: absolute;
+        top: calc(50% - 712px);
+        width: calc(100% - 717px);
+      }
+      .yugen .g48-xmeKl4 {
+        background-color: transparent;
+        height: 411px;
+        left: 240px;
+        position: absolute;
+        top: calc(50% - 677px);
+        width: calc(100% - 240px);
+      }
+      .yugen .g64-xmeKl4 {
+        background-color: transparent;
+        height: 294px;
+        left: 1px;
+        position: absolute;
+        top: calc(50% - 651px);
+        width: calc(100% - 240px);
+      }
+      .yugen .g80-xmeKl4 {
+        background-color: transparent;
+        height: 213px;
+        left: 1586px;
+        position: absolute;
+        top: calc(50% - 651px);
+        width: calc(100% - 1825px);
+      }
+      .yugen .g96-xmeKl4 {
+        background-color: transparent;
+        height: 69px;
+        left: 598px;
+        position: absolute;
+        top: calc(50% - 430px);
+        width: calc(100% - 2271px);
+      }
+      .yugen .gamification-DXmzYo {
+        background-color: transparent;
+        height: auto;
+        left: 36px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 311px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .gamify-your-experience-U135jI {
+        background-color: transparent;
+        bottom: 160px;
+        display: block;
+        height: auto;
+        left: calc(50% - 151px);
+        letter-spacing: 0px;
+        line-height: 39.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        width: 250px;
+        opacity: 0;
+      }
+      .yugen .gg-score-and-yu-n-and-intuitive-U135jI {
+        background-color: transparent;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 34.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 135px;
+        width: 307px;
+      }
+      .yugen .grommet-iconsfigma-6LEltU {
+        background-color: transparent;
+        height: 102px;
+        left: 99px;
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: relative;
+        top: 99px;
+        width: 102px;
+      }
+      .yugen .group-12-Qmpzs2 {
+        background-color: transparent;
+        bottom: 155px;
+        height: 252px;
+        left: calc(50% - 126px);
+        position: absolute;
+        width: 252px;
+      }
+      .yugen .group-13-Qmpzs2 {
+        background-color: transparent;
+        bottom: 1px;
+        height: 101px;
+        left: calc(50% - 147px);
+        position: absolute;
+        width: 296px;
+      }
+      .yugen .group-14-C61RwL {
+        background-color: transparent;
+        height: 58px;
+        left: calc(50% - 84px);
+        position: absolute;
+        top: 40px;
+        width: 170px;
+      }
+      .yugen .group-14-kqmEWe {
+        background-color: transparent;
+        height: 407px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 294px;
+      }
+      .yugen .group-541-eykqzh {
+        background-color: transparent;
+        height: 1639px;
+        left: -0px;
+        position: relative;
+        top: 0px;
+        width: 2709px;
+      }
+      .yugen .group-543-LoK6ev {
+        background-color: transparent;
+        display: block;
+        height: 249px;
+        left: calc(50% - 587px);
+        position: absolute;
+        top: 88px;
+        width: 583px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .group-546-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 318px;
+        left: calc(50% - 616px);
+        position: absolute;
+        top: 2066px;
+        width: 599px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .group-547-dlKqZ6 {
+        background-color: transparent;
+        display: block;
+        height: 214px;
+        left: calc(50% - 506px);
+        position: absolute;
+        top: 356px;
+        width: 524px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .group-548-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 321px;
+        left: calc(50% - 562px);
+        position: absolute;
+        top: calc(50% - 4377px);
+        width: 658px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .group-549-C61RwL {
+        background-color: transparent;
+        height: 494px;
+        left: calc(50% - 587px);
+        position: absolute;
+        top: 3344px;
+        width: 1174px;
+      }
+      .yugen .group-550-XWvYir {
+        background-color: transparent;
+        height: 102px;
+        left: 30px;
+        position: relative;
+        top: 99px;
+        width: 240px;
+      }
+      .yugen .group-554-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 480px;
+        left: calc(50% - 550px);
+        position: absolute;
+        top: 5338px;
+        width: 1102px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .group-559-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 1032px;
+        left: calc(50% - 532px);
+        position: absolute;
+        top: 4060px;
+        width: 1064px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .group-560-C61RwL {
+        background-color: transparent;
+        bottom: -182px;
+        height: 650px;
+        left: 0px;
+        position: absolute;
+        width: calc(100% + 15px);
+      }
+      .yugen .group-561-kqmEWe {
+        background-color: transparent;
+        bottom: 16px;
+        height: 337px;
+        left: calc(50% + 58px);
+        position: absolute;
+        width: 446px;
+      }
+      .yugen .group-562-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 407px;
+        left: 220px;
+        position: absolute;
+        top: 8178px;
+        width: 1001px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .group-563-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 396px;
+        left: calc(50% - 616px);
+        position: absolute;
+        top: 2723px;
+        width: 713px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .group-564-t6AlEG {
+        background-color: transparent;
+        bottom: 184px;
+        height: 138px;
+        left: calc(50% - 386px);
+        position: absolute;
+        width: 359px;
+      }
+      .yugen .group-565-Hd2NY5 {
+        background-color: transparent;
+        bottom: 250px;
+        height: 144px;
+        left: calc(50% - 23px);
+        position: absolute;
+        width: 359px;
+      }
+      .yugen .group-566-YNCD05 {
+        background-color: transparent;
+        bottom: 243px;
+        height: 240px;
+        left: calc(50% - 352px);
+        position: absolute;
+        width: 309px;
+      }
+      .yugen .group-567-9Nx0xl {
+        background-color: transparent;
+        bottom: 269px;
+        height: 243px;
+        left: calc(50% - 28px);
+        position: absolute;
+        width: 403px;
+      }
+      .yugen .group-568-Kzp7Wd {
+        background-color: transparent;
+        height: 645px;
+        left: 0px;
+        position: absolute;
+        top: 1323px;
+        width: 744px;
+      }
+      .yugen .group-569-Kzp7Wd {
+        background-color: transparent;
+        height: 645px;
+        left: 536px;
+        position: absolute;
+        top: 857px;
+        width: 703px;
+      }
+      .yugen .group-570-Kzp7Wd {
+        background-color: transparent;
+        height: 645px;
+        left: 0px;
+        position: absolute;
+        top: 487px;
+        width: 664px;
+      }
+      .yugen .group-571-Kzp7Wd {
+        background-color: transparent;
+        height: 645px;
+        left: 467px;
+        position: absolute;
+        top: 0px;
+        width: 772px;
+      }
+      .yugen .group-ycAXJ8 {
+        background-color: transparent;
+        height: 100%;
+        left: 16.67%;
+        position: relative;
+        top: 0px;
+        width: 66.67%;
+      }
+      .yugen .growth-oIhpS0 {
+        background-color: transparent;
+        height: auto;
+        left: 84px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 313px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .heal-grow-and-accomplish-S92Q8r {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-recoleta-medium);
+        font-size: var(--font-size-xxxxxl);
+        font-weight: 500;
+        height: auto;
+        left: calc(50% - 329px);
+        letter-spacing: 0px;
+        line-height: 106.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: calc(50% - 161px);
+        width: 656px;
+      }
+      .yugen .human-psycholog-ims-to-solve-it-fyjDSQ {
+        background-color: transparent;
+        height: auto;
+        left: calc(50% - 357px);
+        letter-spacing: 0px;
+        line-height: 34px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 90px;
+        width: 711px;
+      }
+      .yugen .image-1-t6AlEG {
+        background-color: transparent;
+        display: block;
+        height: 646px;
+        left: 372px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        width: 400px;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .image-11-dlKqZ6 {
+        background-color: transparent;
+        display: block;
+        height: 766px;
+        left: calc(50% - 115px);
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 106px;
+        width: 935px;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .image-12-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 618px;
+        left: calc(50% + 193px);
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 174px;
+        width: 310px;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .image-13-C61RwL {
+        background-color: transparent;
+        height: 1005px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        right: -718px;
+        top: 2170px;
+        width: 1722px;
+      }
+      .yugen .image-2-Hd2NY5 {
+        background-color: transparent;
+        height: 646px;
+        left: -1px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        width: 400px;
+      }
+      .yugen .image-3-9Nx0xl {
+        background-color: transparent;
+        display: block;
+        height: 646px;
+        left: -1px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        width: 400px;
+        opacity: 0;
+        transform: translate(-25px, 0);
+      }
+      .yugen .image-4-YNCD05 {
+        background-color: transparent;
+        height: 646px;
+        left: 304px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        width: 400px;
+      }
+      .yugen .journal-all-the-group-features-61QJC0 {
+        background-color: transparent;
+        bottom: 123px;
+        display: block;
+        height: auto;
+        left: calc(50% - 202px);
+        letter-spacing: 0px;
+        line-height: 39.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        width: 391px;
+        opacity: 0;
+      }
+      .yugen .landscape-view-oIhpS0 {
+        background-color: transparent;
+        height: 242px;
+        left: 29px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 47px;
+        width: 242px;
+      }
+      .yugen .lets-take-you-o-a-short-journey-Kzp7Wd {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        left: calc(50% - 551px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 80px;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .logosflutter-xqnum0 {
+        background-color: transparent;
+        height: 118px;
+        left: 102px;
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: relative;
+        top: 91px;
+        width: 95px;
+      }
+      .yugen .mask-group-MLKpyy {
+        background-color: transparent;
+        bottom: 0px;
+        height: 252px;
+        left: calc(50% - 126px);
+        position: absolute;
+        width: 252px;
+      }
+      .yugen .meanwhile-QKvJL0 {
+        background-color: transparent;
+        bottom: 91px;
+        color: var(--cod-gray);
+        display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-xl);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 223px);
+        letter-spacing: 0px;
+        line-height: 35.2px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .mountain-FgtENZ {
+        background-color: transparent;
+        height: 1639px;
+        left: 0px;
+        position: relative;
+        top: calc(50% - 819px);
+        width: 100%;
+      }
+      .yugen .path108-k3tgWy {
+        background-color: transparent;
+        height: 70px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 35px);
+        width: 100%;
+      }
+      .yugen .path110-xmeKl4 {
+        background-color: transparent;
+        height: 467px;
+        left: 1490px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 491px);
+        width: calc(100% - 1727px);
+      }
+      .yugen .path128-SQlDoh {
+        background-color: transparent;
+        height: 258px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 129px);
+        width: calc(100% + 1px);
+      }
+      .yugen .path130-xmeKl4 {
+        background-color: transparent;
+        height: 365px;
+        left: -1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 397px);
+        width: calc(100% - 1598px);
+      }
+      .yugen .path132-xmeKl4 {
+        background-color: transparent;
+        height: 181px;
+        left: 562px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 339px);
+        width: calc(100% - 2406px);
+      }
+      .yugen .path150-1vSFKh {
+        background-color: transparent;
+        height: 135px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 68px);
+        width: 100%;
+      }
+      .yugen .path152-xmeKl4 {
+        background-color: transparent;
+        height: 314px;
+        left: 615px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 460px);
+        width: calc(100% - 1996px);
+      }
+      .yugen .path154-xmeKl4 {
+        background-color: transparent;
+        height: 786px;
+        left: 276px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 641px);
+        width: calc(100% - 513px);
+      }
+      .yugen .path172-PCyJYJ {
+        background-color: transparent;
+        height: 470px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 235px);
+        width: calc(100% + 1px);
+      }
+      .yugen .path190-Bf8v8t {
+        background-color: transparent;
+        height: 178px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 89px);
+        width: 100%;
+      }
+      .yugen .path208-6BRmfy {
+        background-color: transparent;
+        height: 210px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 105px);
+        width: 100%;
+      }
+      .yugen .path28-p6Hd0h {
+        background-color: transparent;
+        height: 1640px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 820px);
+        width: calc(100% + 1px);
+      }
+      .yugen .path44-Hljg2W {
+        background-color: transparent;
+        height: 1px;
+        left: 995px;
+        position: absolute;
+        top: 50%;
+        width: calc(100% - 1991px);
+      }
+      .yugen .path60-ErXm7w {
+        background-color: transparent;
+        height: 412px;
+        left: -1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 206px);
+        width: calc(100% + 1px);
+      }
+      .yugen .path76-8jkLKb {
+        background-color: transparent;
+        height: 295px;
+        left: -1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 148px);
+        width: calc(100% + 1px);
+      }
+      .yugen .path92-j5l2fP {
+        background-color: transparent;
+        height: 214px;
+        left: -1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: calc(50% - 107px);
+        width: calc(100% + 1px);
+      }
+      .yugen .problems-fyjDSQ {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-recoleta-light);
+        font-size: var(--font-size-xxxl);
+        font-weight: 300;
+        height: auto;
+        left: calc(50% - 357px);
+        letter-spacing: 0px;
+        line-height: 49.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .promotion-of-pr-persona-growth-oIhpS0 {
+        background-color: transparent;
+        height: auto;
+        left: 18px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 381px;
+        width: 266px;
+      }
+      .yugen .rectangle-396-g3HKGB {
+        background-color: var(--royal-blue);
+        bottom: 182px;
+        height: 469px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        width: calc(100% - 15px);
+      }
+      .yugen .rectangle-397-C61RwL {
+        background-color: var(--royal-blue);
+        height: 434px;
+        left: -351px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 6813px;
+        width: calc(100% + 553px);
+      }
+      .yugen .rectangle-398-C61RwL {
+        background-color: #eb7288;
+        height: 436px;
+        left: -351px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 6377px;
+        width: calc(100% + 553px);
+      }
+      .yugen .rectangle-399-C61RwL {
+        background-color: #3d7fe3;
+        height: 465px;
+        left: -351px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 7247px;
+        width: calc(100% + 553px);
+      }
+      .yugen .rectangle-400-C61RwL {
+        background-color: #32a2c4;
+        height: 905px;
+        left: -278px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -54px;
+        width: calc(100% + 372px);
+      }
+      .yugen .rectangle-65-C61RwL {
+        background-color: #79d3e0;
+        height: 781px;
+        left: -28px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -8px;
+        width: calc(100% + 298px);
+      }
+      .yugen .rectangle-67-C61RwL {
+        background-color: transparent;
+        height: 1298px;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 1953px;
+        width: calc(100% + 3px);
+      }
+      .yugen .simple-iconsts-node-2PHdm8 {
+        background-color: transparent;
+        height: 102px;
+        left: 0px;
+        mix-blend-mode: normal;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 102px;
+      }
+      .yugen .single-powerful-youll-ever-need-r1vSAy {
+        background-color: transparent;
+        color: var(--royal-blue);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 262px);
+        letter-spacing: 0px;
+        line-height: 27px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .span0-4X3RBw {
+        letter-spacing: 0.04px;
+      }
+      .yugen .span0-FTXB9H {
+      }
+      .yugen .span1-4X3RBw {
+        letter-spacing: 0px;
+      }
+      .yugen .span1-FTXB9H {
+        color: var(--cod-gray);
+        font-family: var(--font-family-recoleta-semibold);
+        font-size: var(--font-size-xxxxl);
+        font-weight: 600;
+      }
+      .yugen .star-g3HKGB {
+        background-color: transparent;
+        bottom: 25px;
+        height: 324px;
+        left: calc(50% - 681px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 321px;
+      }
+      .yugen .team-collaboration-ifxR5S {
+        background-color: transparent;
+        bottom: 104px;
+        display: block;
+        height: auto;
+        left: calc(50% - 179px);
+        letter-spacing: 0px;
+        line-height: 39.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .teams-LaOufS {
+        background-color: transparent;
+        height: auto;
+        left: 92px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 310px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .tech-stack-jCcFz7 {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        left: calc(50% - 112px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .tickets-nbhwUF {
+        background-color: transparent;
+        height: 220px;
+        left: 40px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 70px;
+        width: 221px;
+      }
+      .yugen .title-yEPkQh {
+        background-color: transparent;
+        bottom: 0px;
+        color: #545454;
+        font-family: var(--font-family-recoleta-light);
+        font-size: var(--font-size-108_2px);
+        font-weight: 300;
+        height: auto;
+        left: calc(50% - 148px);
+        letter-spacing: 0px;
+        line-height: 101.5px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: 296px;
+      }
+      .yugen .to-do-U6OUdv {
+        background-color: transparent;
+        height: auto;
+        left: 94px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 314px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .to-dos-to-track-onthly-progress-Q0nZMO {
+        background-color: transparent;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 34.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 68px;
+        width: 357px;
+      }
+      .yugen .tourists-LaOufS {
+        background-color: transparent;
+        height: 213px;
+        left: 44px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 74px;
+        width: 213px;
+      }
+      .yugen .tracking-person-gh-productivity-U6OUdv {
+        background-color: transparent;
+        height: auto;
+        left: 24px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 382px;
+        width: 255px;
+      }
+      .yugen .tracking-person-nd-productivity-S92Q8r {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-24_1px);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 329px);
+        letter-spacing: 0px;
+        line-height: 35px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: calc(50% + 91px);
+        width: 639px;
+      }
+      .yugen .train-U6OUdv {
+        background-color: transparent;
+        height: 220px;
+        left: 40px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 70px;
+        width: 220px;
+      }
+      .yugen .truely-express-y-talking-to-it-61QJC0 {
+        background-color: transparent;
+        color: var(--black);
+        font-family: var(--font-family-nunito_sans);
+        font-size: var(--font-size-l);
+        font-weight: 400;
+        height: auto;
+        left: 0px;
+        letter-spacing: 0px;
+        line-height: 34.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 173px;
+        width: 401px;
+      }
+      .yugen .union-Cla5sn {
+        background-color: transparent;
+        bottom: 131px;
+        height: 258px;
+        left: calc(50% + 442px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 258px;
+      }
+      .yugen .union-g3HKGB {
+        background-color: transparent;
+        bottom: 79px;
+        display: block;
+        height: 470px;
+        left: calc(50% - 411px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 477px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .vacation-DXmzYo {
+        background-color: transparent;
+        height: 214px;
+        left: 43px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 73px;
+        width: 214px;
+      }
+      .yugen .vector-25-5Nxcvc {
+        background-color: transparent;
+        height: 752px;
+        left: 159px;
+        position: absolute;
+        top: -295px;
+        transform: rotate(-139.95deg);
+        width: 698px;
+      }
+      .yugen .vector-26-5Nxcvc {
+        background-color: transparent;
+        height: 740px;
+        left: 151px;
+        position: absolute;
+        top: -294px;
+        transform: rotate(-139.95deg);
+        width: 731px;
+      }
+      .yugen .vector-27-5Nxcvc {
+        background-color: transparent;
+        height: 621px;
+        left: 101px;
+        position: absolute;
+        top: -214px;
+        transform: rotate(-139.95deg);
+        width: 829px;
+      }
+      .yugen .vector-6kztxm {
+        background-color: transparent;
+        height: 14.42%;
+        left: 46.84%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 73.94%;
+        width: 18.38%;
+      }
+      .yugen .vector-CvikQ2 {
+        background-color: transparent;
+        height: 100.79%;
+        left: 5.72%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -0.4%;
+        width: 88.56%;
+      }
+      .yugen .vector-DpnTTN {
+        background-color: transparent;
+        height: 27.57%;
+        left: 46.99%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 72.56%;
+        width: 53.05%;
+      }
+      .yugen .vector-FfTe2l {
+        background-color: transparent;
+        height: 65.74%;
+        left: -0.3%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -0.31%;
+        width: 100.32%;
+      }
+      .yugen .vector-GSee4F {
+        background-color: transparent;
+        height: 42.41%;
+        left: 27.97%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 45.82%;
+        width: 71.95%;
+      }
+      .yugen .vector-HhEcmI {
+        background-color: transparent;
+        height: 33.74%;
+        left: 49.7%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 33.13%;
+        width: 50.61%;
+      }
+      .yugen .vector-Io3CC9 {
+        background-color: transparent;
+        height: 77.31%;
+        left: 0px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 11.35%;
+        width: 100.21%;
+      }
+      .yugen .vector-Svqa5X {
+        background-color: transparent;
+        height: 33.74%;
+        left: -0.3%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 33.13%;
+        width: 50.61%;
+      }
+      .yugen .vector-bfUX5m {
+        background-color: transparent;
+        height: 34.23%;
+        left: -0.3%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 66.22%;
+        width: 50.61%;
+      }
+      .yugen .vector-dlKqZ6 {
+        background-color: transparent;
+        height: 671px;
+        left: calc(50% + 337px);
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 273px;
+        width: 593px;
+      }
+      .yugen .vector-gbTRsz {
+        background-color: transparent;
+        height: 33.74%;
+        left: -0.3%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -0.2%;
+        width: 50.61%;
+      }
+      .yugen .vector-qaqE3m {
+        background-color: transparent;
+        height: 31.39%;
+        left: 27.72%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 57.03%;
+        width: 38.87%;
+      }
+      .yugen .vector-xEAiGY {
+        background-color: transparent;
+        height: 33.74%;
+        left: 49.7%;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: -0.2%;
+        width: 50.61%;
+      }
+      .yugen .what-is-yugen-yzfg5m {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 299px);
+        letter-spacing: 0px;
+        line-height: 27px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .why-yugen-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        left: calc(50% - 134px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 3942px;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .with-gamificati-re-and-gg-score-DXmzYo {
+        background-color: transparent;
+        height: auto;
+        left: 18px;
+        letter-spacing: 0px;
+        line-height: 24.3px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: center;
+        top: 379px;
+        width: 266px;
+      }
+      .yugen .work-in-peace-jxXxQ1 {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        left: calc(50% - 292px);
+        letter-spacing: 0px;
+        line-height: 52.8px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
+      .yugen .yu-gen-is-a-pro-t-to-do-further-jxXxQ1 {
+        background-color: transparent;
+        color: var(--cod-gray);
+        display: block;
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 292px);
+        letter-spacing: 0.18px;
+        line-height: 30.6px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 125px;
+        width: 581px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .yu-gen-is-a-pro-to-make-use-of-yzfg5m {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        left: calc(50% - 299px);
+        line-height: 34px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 46px;
+        width: 597px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .yugen-AX7pWk {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-recoleta-light);
+        font-size: var(--font-size-61_7px);
+        font-weight: 300;
+        height: auto;
+        left: calc(50% - 85px);
+        letter-spacing: 0px;
+        line-height: 57.9px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 0px;
+        white-space: nowrap;
+        width: 170px;
+      }
+      .yugen .yugen-nbhwUF {
+        background-color: transparent;
+        height: auto;
+        left: 94px;
+        letter-spacing: 0px;
+        line-height: 44px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        top: 314px;
+        white-space: nowrap;
+        width: auto;
+      }
+      @keyframes animate-enter-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter1-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter10-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter11-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter12-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter13-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter14-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter15-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter16-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter17-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter18-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter19-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter2-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter20-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter21-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter22-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter23-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter24-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter25-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter3-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter4-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter5-frames {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter6-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter7-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter8-frames {
+        from {
+          opacity: 0;
+          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter9-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
   </head>
-  <body>
-    yugen
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="yugen" />
+    <div class="yugen screen" data-id="42:23967">
+      <div class="rectangle-400-C61RwL" data-id="52:49"></div>
+      <div class="rectangle-65-C61RwL" data-id="42:24219"></div>
+      <div class="frame-485-C61RwL" data-id="45:1444">
+        <div class="group-541-eykqzh" data-id="42:24478">
+          <div class="mountain-FgtENZ" data-id="42:24178">
+            <div class="g16-xmeKl4" data-id="42:24179">
+              <img
+                class="path28-p6Hd0h"
+                data-id="42:24180"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path28@1x.png"
+              />
+            </div>
+            <div class="g32-xmeKl4" data-id="42:24181">
+              <img
+                class="path44-Hljg2W"
+                data-id="42:24182"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/path44@1x.png"
+              />
+            </div>
+            <div class="g48-xmeKl4" data-id="42:24183">
+              <img
+                class="path60-ErXm7w"
+                data-id="42:24184"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path60@1x.png"
+              />
+            </div>
+            <div class="g64-xmeKl4" data-id="42:24185">
+              <img
+                class="path76-8jkLKb"
+                data-id="42:24186"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path76@1x.png"
+              />
+            </div>
+            <div class="g80-xmeKl4" data-id="42:24187">
+              <img
+                class="path92-j5l2fP"
+                data-id="42:24188"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path92@1x.png"
+              />
+            </div>
+            <div class="g96-xmeKl4" data-id="42:24189">
+              <img
+                class="path108-k3tgWy"
+                data-id="42:24190"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path108@2x.png"
+              />
+            </div>
+            <img
+              class="path110-xmeKl4"
+              data-id="42:24191"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path110@1x.png"
+            />
+            <div class="g114-xmeKl4" data-id="42:24192">
+              <img
+                class="path128-SQlDoh"
+                data-id="42:24193"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path128@2x.png"
+              />
+            </div>
+            <img
+              class="path130-xmeKl4"
+              data-id="42:24194"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path130@1x.png"
+            /><img
+              class="path132-xmeKl4"
+              data-id="42:24195"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path132@2x.png"
+            />
+            <div class="g136-xmeKl4" data-id="42:24196">
+              <img
+                class="path150-1vSFKh"
+                data-id="42:24197"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path150@2x.png"
+              />
+            </div>
+            <img
+              class="path152-xmeKl4"
+              data-id="42:24198"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path152@1x.png"
+            /><img
+              class="path154-xmeKl4"
+              data-id="42:24199"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path154@1x.png"
+            />
+            <div class="g158-xmeKl4" data-id="42:24200">
+              <img
+                class="path172-PCyJYJ"
+                data-id="42:24201"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path172@1x.png"
+              />
+            </div>
+            <div class="g176-xmeKl4" data-id="42:24202">
+              <img
+                class="path190-Bf8v8t"
+                data-id="42:24203"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path190@2x.png"
+              />
+            </div>
+            <div class="g194-xmeKl4" data-id="42:24204">
+              <img
+                class="path208-6BRmfy"
+                data-id="42:24205"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path208@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-548-C61RwL animate-enter" data-id="45:1455">
+        <div class="heal-grow-and-accomplish-S92Q8r" data-id="42:24470">
+          Heal, grow and<br />accomplish
+        </div>
+        <div class="tracking-person-nd-productivity-S92Q8r" data-id="42:24471">
+          Tracking personal and collaborative growth through emotions and
+          productivity
+        </div>
+      </div>
+      <div class="group-14-C61RwL" data-id="42:24220">
+        <div class="yugen-AX7pWk" data-id="42:24221">Yugen</div>
+      </div>
+      <img
+        class="rectangle-67-C61RwL"
+        data-id="45:1393"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/rectangle-67@1x.png"
+      />
+      <div class="group-546-C61RwL animate-enter2" data-id="45:1453">
+        <div class="what-is-yugen-yzfg5m" data-id="45:1394">WHAT IS YUGEN?</div>
+        <div
+          class="yu-gen-is-a-pro-to-make-use-of-yzfg5m worksans-normal-white-20px animate-enter1"
+          data-id="45:1392"
+          show-on-scroll
+        >
+          <span class="span0-4X3RBw worksans-normal-white-20px"
+            >YuGen is a productivity and self-growth tool. The motive of the app
+            is not to dynamically tell you what to do, but it’s is a reflection
+            of your day and gives you control over what to do further.<br /><br />YuGen
+            is a very advanced combination of a high complexity ToDo App, Diary
+            and dictaphone that is a perfect fit for any individuals and teams
+            to make use of</span
+          ><span class="span1-4X3RBw worksans-normal-white-20px">.</span>
+        </div>
+      </div>
+      <img
+        class="image-12-C61RwL animate-enter3"
+        data-id="45:1440"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/image-12@1x.png"
+      />
+      <div class="group-549-C61RwL" data-id="45:1456">
+        <div class="group-543-LoK6ev animate-enter6" data-id="45:1448">
+          <div
+            class="yu-gen-is-a-pro-t-to-do-further-jxXxQ1 animate-enter4"
+            data-id="45:1447"
+            show-on-scroll
+          >
+            YuGen is a productivity and self-growth tool. The motive of the app
+            is not to dynamically tell you what to do, but it’s is a reflection
+            of your day and gives you control over what to do further.
+          </div>
+          <div
+            class="work-in-peace-jxXxQ1 recoleta-regular-normal-cod-gray-48px animate-enter5"
+            data-id="42:24007"
+            show-on-scroll
+          >
+            Work in Peace
+          </div>
+        </div>
+        <img
+          class="floating-LoK6ev animate-enter7"
+          data-id="42:24176"
+          show-on-scroll
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/floating@2x.png"
+        />
+      </div>
+      <div class="group-563-C61RwL animate-enter8" data-id="52:26">
+        <div
+          class="human-psycholog-ims-to-solve-it-fyjDSQ worksans-normal-white-20px"
+          data-id="45:1443"
+        >
+          Human psychology is an intriguing subject. Sometimes these small
+          things add up and impact one&#39;s life in the longer term.<br /><br />In
+          the ruthlessly competitive world of the 21st Century, productivity
+          highly contributes to the personal growth and mental health of a
+          person that guarantees survival.<br /><br />Many people in this world
+          are unable to tap the power of their productivity and that is a major
+          issue and Yugen aims to solve it
+        </div>
+        <div class="problems-fyjDSQ" data-id="42:24217">Problems.</div>
+      </div>
+      <div class="frame-706-C61RwL" data-id="58:1377">
+        <div class="frame-130-dlKqZ6" data-id="42:24669">
+          <img
+            class="vector-26-5Nxcvc"
+            data-id="42:24670"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-26@1x.png"
+          /><img
+            class="vector-25-5Nxcvc"
+            data-id="42:24671"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-25@1x.png"
+          /><img
+            class="vector-27-5Nxcvc"
+            data-id="42:24672"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-27@1x.png"
+          />
+        </div>
+        <img
+          class="vector-dlKqZ6"
+          data-id="42:24469"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/vector@1x.png"
+        /><img
+          class="image-11-dlKqZ6 animate-enter9"
+          data-id="45:1367"
+          show-on-scroll
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-11@1x.png"
+        />
+        <div
+          class="group-547-dlKqZ6 animate-enter10"
+          data-id="45:1454"
+          show-on-scroll
+        >
+          <div class="build-organize-tually-anywhere-r1vSAy" data-id="45:1368">
+            Build, organize, and collaborate on work in one place from virtually
+            anywhere
+          </div>
+          <div class="single-powerful-youll-ever-need-r1vSAy" data-id="45:1370">
+            SINGLE POWERFUL GROWTH APP YOU’LL EVER NEED
+          </div>
+        </div>
+      </div>
+      <div
+        class="group-554-C61RwL animate-enter12"
+        data-id="45:1505"
+        show-on-scroll
+      >
+        <div
+          class="tech-stack-jCcFz7 recoleta-regular-normal-cod-gray-48px animate-enter11"
+          data-id="45:1458"
+          show-on-scroll
+        >
+          Tech stack
+        </div>
+        <div class="frame-486-jCcFz7" data-id="45:1460">
+          <div class="group-550-XWvYir" data-id="45:1478">
+            <div class="simple-iconsts-node-2PHdm8" data-id="45:1468">
+              <img
+                class="vector-CvikQ2"
+                data-id="45:1469"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-1@2x.png"
+              />
+            </div>
+            <div class="fa-brandsnode-2PHdm8" data-id="45:1470">
+              <img
+                class="vector-Io3CC9"
+                data-id="45:1471"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-2@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-487-jCcFz7" data-id="45:1479">
+          <div class="grommet-iconsfigma-6LEltU" data-id="45:1461">
+            <div class="group-ycAXJ8" data-id="45:1462">
+              <img
+                class="vector-HhEcmI"
+                data-id="45:1463"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-3@2x.png"
+              /><img
+                class="vector-bfUX5m"
+                data-id="45:1464"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-4@2x.png"
+              /><img
+                class="vector-Svqa5X"
+                data-id="45:1465"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-5@2x.png"
+              /><img
+                class="vector-gbTRsz"
+                data-id="45:1466"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-6@2x.png"
+              /><img
+                class="vector-xEAiGY"
+                data-id="45:1467"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-7@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-488-jCcFz7" data-id="45:1486">
+          <div class="logosflutter-xqnum0" data-id="45:1472">
+            <img
+              class="vector-FfTe2l"
+              data-id="45:1473"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-8@2x.png"
+            /><img
+              class="vector-GSee4F"
+              data-id="45:1474"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-9@2x.png"
+            /><img
+              class="vector-DpnTTN"
+              data-id="45:1475"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-10@2x.png"
+            /><img
+              class="vector-qaqE3m"
+              data-id="45:1476"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-11@2x.png"
+            /><img
+              class="vector-6kztxm"
+              data-id="45:1477"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-12@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="why-yugen-C61RwL recoleta-regular-normal-cod-gray-48px animate-enter13"
+        data-id="45:1530"
+        show-on-scroll
+      >
+        <span class="span0-FTXB9H recoleta-regular-normal-cod-gray-48px"
+          >Why </span
+        ><span class="span1-FTXB9H">Yugen?</span>
+      </div>
+      <div
+        class="group-559-C61RwL animate-enter14"
+        data-id="45:1574"
+        show-on-scroll
+      >
+        <div class="frame-699-gpQSQ3" data-id="45:1541">
+          <img
+            class="train-U6OUdv"
+            data-id="45:1565"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/train@2x.png"
+          />
+          <div
+            class="to-do-U6OUdv recoleta-regular-normal-black-40px"
+            data-id="45:1539"
+          >
+            To-Do
+          </div>
+          <div
+            class="tracking-person-gh-productivity-U6OUdv worksans-normal-black-18px"
+            data-id="45:1540"
+          >
+            Tracking personal growth through productivity
+          </div>
+        </div>
+        <div class="frame-700-gpQSQ3" data-id="45:1542">
+          <img
+            class="discovery-O4xPlN"
+            data-id="45:1568"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/discovery@2x.png"
+          />
+          <div
+            class="diary-O4xPlN recoleta-regular-normal-black-40px"
+            data-id="45:1543"
+          >
+            Diary
+          </div>
+          <div
+            class="emotional-growt-taphone-feature-O4xPlN worksans-normal-black-18px"
+            data-id="45:1544"
+          >
+            Emotional Growth and history tracking with the dictaphone feature.
+          </div>
+        </div>
+        <div class="frame-701-gpQSQ3" data-id="45:1546">
+          <img
+            class="tickets-nbhwUF"
+            data-id="45:1566"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/tickets@2x.png"
+          />
+          <div
+            class="yugen-nbhwUF recoleta-regular-normal-black-40px"
+            data-id="45:1547"
+          >
+            Yugen
+          </div>
+          <div
+            class="a-25-minute-ses-nt-productivity-nbhwUF worksans-normal-black-18px"
+            data-id="45:1548"
+          >
+            A 25-minute session of work for consistent productivity
+          </div>
+        </div>
+        <div class="frame-702-gpQSQ3" data-id="45:1549">
+          <img
+            class="tourists-LaOufS"
+            data-id="45:1569"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/tourists@2x.png"
+          />
+          <div
+            class="teams-LaOufS recoleta-regular-normal-black-40px"
+            data-id="45:1550"
+          >
+            Teams
+          </div>
+          <div
+            class="collaborative-p-ctivity-tracker-LaOufS worksans-normal-black-18px"
+            data-id="45:1551"
+          >
+            Collaborative productivity tracker
+          </div>
+        </div>
+        <div class="frame-703-gpQSQ3" data-id="45:1555">
+          <img
+            class="vacation-DXmzYo"
+            data-id="45:1563"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vacation@2x.png"
+          />
+          <div
+            class="gamification-DXmzYo recoleta-regular-normal-black-40px"
+            data-id="45:1556"
+          >
+            Gamification
+          </div>
+          <div
+            class="with-gamificati-re-and-gg-score-DXmzYo worksans-normal-black-18px"
+            data-id="45:1557"
+          >
+            With gamification parts such as Yugen score and GG score
+          </div>
+        </div>
+        <div class="frame-704-gpQSQ3" data-id="45:1558">
+          <img
+            class="landscape-view-oIhpS0"
+            data-id="45:1564"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/landscape-view@2x.png"
+          />
+          <div
+            class="growth-oIhpS0 recoleta-regular-normal-black-40px"
+            data-id="45:1559"
+          >
+            Growth
+          </div>
+          <div
+            class="promotion-of-pr-persona-growth-oIhpS0 worksans-normal-black-18px"
+            data-id="45:1560"
+          >
+            Promotion of productivity and positive emotions is what leads to
+            persona growth
+          </div>
+        </div>
+      </div>
+      <div
+        class="group-562-C61RwL animate-enter17"
+        data-id="45:1602"
+        show-on-scroll
+      >
+        <div class="group-14-kqmEWe" data-id="45:1577">
+          <div class="group-12-Qmpzs2" data-id="45:1578">
+            <div class="ellipse-4-MLKpyy" data-id="45:1579"></div>
+            <img
+              class="mask-group-MLKpyy"
+              data-id="45:1580"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/mask-group@2x.png"
+            />
+          </div>
+          <div class="group-13-Qmpzs2" data-id="45:1587">
+            <h1 class="title-yEPkQh" data-id="45:1588">Yugen</h1>
+          </div>
+        </div>
+        <div class="group-561-kqmEWe" data-id="45:1600">
+          <a
+            href="https://www.figma.com/file/ZaNKgJV3gAV4gq8sK3QRNL/Yugen?node-id=42%3A23967"
+            target="_blank"
+            ><div class="frame-705-QKvJL0" data-id="45:1598">
+              <div class="checkout-our-designs-here-K7aGaS" data-id="45:1597">
+                Checkout our designs here
+              </div>
+            </div></a
+          >
+          <div
+            class="app-coming-really-soon-QKvJL0 animate-enter15"
+            data-id="45:1576"
+            show-on-scroll
+          >
+            App coming really soon :)
+          </div>
+          <div
+            class="meanwhile-QKvJL0 animate-enter16"
+            data-id="45:1599"
+            show-on-scroll
+          >
+            Meanwhile,
+          </div>
+        </div>
+      </div>
+      <div class="group-560-C61RwL" data-id="45:1596">
+        <div class="rectangle-396-g3HKGB" data-id="45:1575"></div>
+        <img
+          class="union-g3HKGB animate-enter18"
+          data-id="45:1591"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/union@2x.png"
+        />
+        <div class="ellipse-59-g3HKGB" data-id="45:1592"></div>
+        <img
+          class="star-g3HKGB"
+          data-id="45:1593"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/star@2x.png"
+        /><img
+          class="ellipse-60-g3HKGB"
+          data-id="45:1594"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/ellipse-60@1x.png"
+        /><img
+          class="union-Cla5sn"
+          data-id="45:1595"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/union-1@2x.png"
+        />
+      </div>
+      <div class="rectangle-397-C61RwL" data-id="45:1625"></div>
+      <div class="rectangle-399-C61RwL" data-id="52:25"></div>
+      <div class="rectangle-398-C61RwL" data-id="45:1627"></div>
+      <div class="frame-707-C61RwL" data-id="58:1400">
+        <div
+          class="lets-take-you-o-a-short-journey-Kzp7Wd recoleta-regular-normal-cod-gray-48px animate-enter19"
+          data-id="45:1537"
+          show-on-scroll
+        >
+          Let’s take you on a short journey
+        </div>
+        <div class="group-568-Kzp7Wd" data-id="58:1373">
+          <img
+            class="image-3-9Nx0xl animate-enter20"
+            data-id="52:12"
+            show-on-scroll
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-3@1x.png"
+          />
+          <div class="group-567-9Nx0xl" data-id="52:100">
+            <div
+              class="journal-all-the-group-features-61QJC0 recoleta-medium-white-36px animate-enter21"
+              data-id="52:22"
+              show-on-scroll
+            >
+              Journal all the way with personal and group features
+            </div>
+            <div
+              class="truely-express-y-talking-to-it-61QJC0"
+              data-id="53:1327"
+            >
+              Truely express your feelings to the journal by talking to it
+            </div>
+          </div>
+        </div>
+        <div class="group-571-Kzp7Wd" data-id="58:1376">
+          <img
+            class="image-1-t6AlEG animate-enter22"
+            data-id="52:13"
+            show-on-scroll
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-1@1x.png"
+          />
+          <div class="group-564-t6AlEG" data-id="52:97">
+            <div
+              class="a-personalised-to-do-Q0nZMO recoleta-medium-white-36px animate-enter23"
+              data-id="52:18"
+              show-on-scroll
+            >
+              A personalised To-Do
+            </div>
+            <div
+              class="to-dos-to-track-onthly-progress-Q0nZMO nunitosans-normal-white-24px"
+              data-id="53:1328"
+            >
+              To-Dos to track daily and monthly progress
+            </div>
+          </div>
+        </div>
+        <div class="group-570-Kzp7Wd" data-id="58:1375">
+          <img
+            class="image-2-Hd2NY5"
+            data-id="52:14"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-2@1x.png"
+          />
+          <div class="group-565-Hd2NY5" data-id="52:98">
+            <div
+              class="team-collaboration-ifxR5S recoleta-medium-white-36px animate-enter24"
+              data-id="52:20"
+              show-on-scroll
+            >
+              Team Collaboration
+            </div>
+            <div
+              class="collaborations-ctivity-metrics-ifxR5S nunitosans-normal-white-24px"
+              data-id="52:51"
+            >
+              Collaborations with team and project productivity metrics
+            </div>
+          </div>
+        </div>
+        <div class="group-569-Kzp7Wd" data-id="58:1374">
+          <img
+            class="image-4-YNCD05"
+            data-id="52:15"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-4@1x.png"
+          />
+          <div class="group-566-YNCD05" data-id="52:99">
+            <div
+              class="gamify-your-experience-U135jI recoleta-medium-white-36px animate-enter25"
+              data-id="52:21"
+              show-on-scroll
+            >
+              Gamify your experience
+            </div>
+            <div
+              class="gg-score-and-yu-n-and-intuitive-U135jI nunitosans-normal-white-24px"
+              data-id="52:52"
+            >
+              GG score and Yugen to make your productivity trackingfun and
+              intuitive.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="image-13-C61RwL"
+        data-id="58:1468"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9ef57e8190e4de833e90/img/image-13@1x.png"
+      />
+    </div>
+    <script src="launchpad-js/launchpad-banner.js" async></script>
+    <script
+      defer
+      src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"
+    ></script>
+    <script>
+      function ShowOnScroll() {
+        this.toShow = [];
+        this.nextEventY = undefined;
+      }
+
+      ShowOnScroll.prototype.show = function (e) {
+        e.style.display = "";
+      };
+
+      ShowOnScroll.prototype.hide = function (e) {
+        e.style.display = "none";
+      };
+
+      ShowOnScroll.prototype.getTop = function (e) {
+        if (e.Top != undefined && e.Top != 0) {
+          return e.Top;
+        }
+        var top = 0;
+        var iter = e;
+        do {
+          top += iter.offsetTop || 0;
+          iter = iter.offsetParent;
+        } while (iter);
+        e.Top = top;
+        return top;
+      };
+
+      ShowOnScroll.prototype.onScroll = function () {
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+          return;
+        }
+        this.nextEventY = undefined;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+          } else {
+            this.nextEventY = top;
+            break;
+          }
+        }
+      };
+
+      ShowOnScroll.prototype.resetScrolling = function () {
+        // Clear state
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          this.show(e);
+        }
+        this.toShow = [];
+        this.nextEventY == undefined;
+
+        // Collect items
+        var itemsToShowOnScroll = Array.prototype.slice.call(
+          document.getElementsByTagName("*")
+        );
+        itemsToShowOnScroll = itemsToShowOnScroll.filter(function (e) {
+          return e.getAttribute("show-on-scroll") != undefined;
+        });
+        var getTop = this.getTop;
+        itemsToShowOnScroll.sort(function (a, b) {
+          return getTop(a) - getTop(b);
+        });
+        for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+          var e = itemsToShowOnScroll[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            continue;
+          }
+          this.toShow.push(e);
+          this.hide(e);
+          this.nextEventY =
+            this.nextEventY != undefined ? this.nextEventY : top;
+        }
+      };
+
+      ShowOnScroll.prototype.handleEvent = function (e) {
+        switch (e.type) {
+          case "scroll":
+            this.onScroll();
+            break;
+          case "resize":
+            this.resetScrolling();
+            break;
+        }
+      };
+
+      ShowOnScroll.prototype.init = function () {
+        this.resetScrolling();
+        window.addEventListener("scroll", this);
+        window.addEventListener("resize", this);
+      };
+
+      // After anima-src
+      setTimeout(function () {
+        var instShowOnScroll = new ShowOnScroll();
+        instShowOnScroll.init();
+      }, 250);
+    </script>
   </body>
 </html>
