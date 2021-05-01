@@ -12,7 +12,7 @@
 
 YuGen is a productivity and self-growth tool. The motive of the app is not to dynamically tell you what to do, but it’s is a reflection of your day and gives you control over what to do further.
 
-The word Yūgen is said to mean “a profound, mysterious sense of the beauty of the universe… and the sad beauty of human suffering”.means
+The word _Yūgen_ is said to mean “a profound, mysterious sense of the beauty of the universe… and the sad beauty of human suffering”.
 
 YuGen is a very advanced combination of a high complexity ToDo App, Diary and dictaphone that is a perfect fit for any individuals and teams to make use of.
 
@@ -82,6 +82,8 @@ TL;DR: A tool that enables one to tap their hidden productivity potential and ma
 
 ## How it works
 
+If you're new to Flutter the first thing you'll need is to follow the [setup instructions](https://flutter.dev/docs/get-started/install).
+
 ## Tech Stack
 
 <p align="center">
@@ -93,7 +95,7 @@ TL;DR: A tool that enables one to tap their hidden productivity potential and ma
 ## Relevant URLs
 
 - [Landing Page](https://yugen.vercel.app/)
-- [Designs](https://design.unichain.tk)
+- [Designs](https://www.figma.com/file/ZaNKgJV3gAV4gq8sK3QRNL/Yugen?node-id=42%3A23967)
 - [App](https://app.dummylink.tk)
 
 ## Contributors

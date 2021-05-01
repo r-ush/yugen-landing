@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YuGen - Heal, Grow, Accomplish</title>
+    <title>Yugen - Heal, Grow, Accomplish</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1440, maximum-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./favicon.png"
-    />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
     <script id="anima-hotspots-script" src="hotspots.js"></script>
@@ -202,18 +198,20 @@
         --royal-blue: #4453de;
         --white: #ffffff;
 
-        --font-size-108_2px: 108.2px;
         --font-size-24_1px: 24.1px;
+        --font-size-35_5px: 35.5px;
         --font-size-61_7px: 61.7px;
+        --font-size-85_1px: 85.1px;
         --font-size-l: 24px;
         --font-size-m: 20px;
         --font-size-s: 18px;
-        --font-size-xl: 32px;
-        --font-size-xs: 16px;
-        --font-size-xxl: 36px;
-        --font-size-xxxl: 40px;
-        --font-size-xxxxl: 48px;
-        --font-size-xxxxxl: 80px;
+        --font-size-xl: 28px;
+        --font-size-xs: 14px;
+        --font-size-xxl: 32px;
+        --font-size-xxxl: 38px;
+        --font-size-xxxxl: 40px;
+        --font-size-xxxxxl: 48px;
+        --font-size-xxxxxxl: 80px;
 
         --font-family-nunito_sans: "Nunito Sans", Helvetica;
         --font-family-recoleta-light: "Recoleta-Light", Helvetica;
@@ -225,7 +223,7 @@
       .recoleta-regular-normal-black-40px {
         color: var(--black);
         font-family: var(--font-family-recoleta-regular);
-        font-size: var(--font-size-xxxl);
+        font-size: var(--font-size-xxxxl);
         font-style: normal;
         font-weight: 400;
       }
@@ -239,21 +237,14 @@
       .recoleta-regular-normal-cod-gray-48px {
         color: var(--cod-gray);
         font-family: var(--font-family-recoleta-regular);
-        font-size: var(--font-size-xxxxl);
+        font-size: var(--font-size-xxxxxl);
         font-style: normal;
         font-weight: 400;
       }
-      .worksans-normal-white-20px {
-        color: var(--white);
-        font-family: var(--font-family-work_sans);
-        font-size: var(--font-size-m);
-        font-style: normal;
-        font-weight: 400;
-      }
-      .recoleta-medium-white-36px {
+      .recoleta-medium-white-28px {
         color: var(--white);
         font-family: var(--font-family-recoleta-medium);
-        font-size: var(--font-size-xxl);
+        font-size: var(--font-size-xl);
         font-style: normal;
         font-weight: 500;
       }
@@ -264,6 +255,13 @@
         font-style: normal;
         font-weight: 400;
       }
+      .worksans-normal-white-20px {
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+      }
 
       /* screen - yugen */
 
@@ -271,7 +269,7 @@
         background-color: var(--white);
         height: 100vh;
         margin: 0px;
-        min-height: 9416px;
+        min-height: 10124px;
         min-width: 1440px;
         mix-blend-mode: normal;
         overflow: hidden;
@@ -293,12 +291,12 @@
       }
       .yugen .a-personalised-to-do-Q0nZMO {
         background-color: transparent;
-        bottom: 98px;
+        bottom: 90px;
         display: block;
         height: auto;
         left: calc(50% - 179px);
         letter-spacing: 0px;
-        line-height: 39.6px;
+        line-height: 40.6px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -307,30 +305,30 @@
         opacity: 0;
       }
       .yugen .animate-enter {
-        animation: animate-enter-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(25px, 0);
+      }
+      .yugen .animate-enter1 {
+        animation: animate-enter1-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(-25px, 0);
       }
-      .yugen .animate-enter1 {
-        animation: animate-enter1-frames 0.3s ease-in-out 0s 1 normal forwards;
+      .yugen .animate-enter10 {
+        animation: animate-enter10-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter11 {
+        animation: animate-enter11-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
       }
-      .yugen .animate-enter10 {
-        animation: animate-enter10-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(-25px, 0);
-      }
-      .yugen .animate-enter11 {
-        animation: animate-enter11-frames 0.44s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-      }
       .yugen .animate-enter12 {
-        animation: animate-enter12-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter12-frames 0.4s ease-in-out 2s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
@@ -341,10 +339,10 @@
         opacity: 0;
       }
       .yugen .animate-enter14 {
-        animation: animate-enter14-frames 0.3s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter14-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter15 {
         animation: animate-enter15-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -352,21 +350,20 @@
         opacity: 0;
       }
       .yugen .animate-enter16 {
-        animation: animate-enter16-frames 0.44s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter16-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+        transform: translate(25px, 0);
       }
       .yugen .animate-enter17 {
-        animation: animate-enter17-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter17-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
       }
       .yugen .animate-enter18 {
-        animation: animate-enter18-frames 0.4s ease-in-out 2s 1 normal forwards;
+        animation: animate-enter18-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(0, 25px);
       }
       .yugen .animate-enter19 {
         animation: animate-enter19-frames 0.44s ease-in-out 0s 1 normal forwards;
@@ -374,108 +371,95 @@
         opacity: 0;
       }
       .yugen .animate-enter2 {
-        animation: animate-enter2-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter2-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(-25px, 0);
       }
       .yugen .animate-enter20 {
-        animation: animate-enter20-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter20-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter21 {
+        animation: animate-enter21-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter22 {
+        animation: animate-enter22-frames 0.3s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter23 {
+        animation: animate-enter23-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(-25px, 0);
       }
-      .yugen .animate-enter21 {
-        animation: animate-enter21-frames 0.44s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-      }
-      .yugen .animate-enter22 {
-        animation: animate-enter22-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(25px, 0);
-      }
-      .yugen .animate-enter23 {
-        animation: animate-enter23-frames 0.44s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-      }
       .yugen .animate-enter24 {
-        animation: animate-enter24-frames 0.44s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter24-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter25 {
         animation: animate-enter25-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
       }
-      .yugen .animate-enter3 {
-        animation: animate-enter3-frames 0.4s ease-in-out 0s 1 normal forwards;
-        display: block;
-        opacity: 0;
-        transform: translate(25px, 0);
-      }
-      .yugen .animate-enter4 {
-        animation: animate-enter4-frames 0.3s ease-in-out 0s 1 normal forwards;
+      .yugen .animate-enter26 {
+        animation: animate-enter26-frames 0.5s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
         transform: translate(0, 25px);
       }
-      .yugen .animate-enter5 {
-        animation: animate-enter5-frames 0.44s ease-in-out 0s 1 normal forwards;
+      .yugen .animate-enter3 {
+        animation: animate-enter3-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
+        transform: translate(0, 25px);
+      }
+      .yugen .animate-enter4 {
+        animation: animate-enter4-frames 0.44s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+      }
+      .yugen .animate-enter5 {
+        animation: animate-enter5-frames 0.4s ease-in-out 0s 1 normal forwards;
+        display: block;
+        opacity: 0;
+        transform: translate(-25px, 0);
       }
       .yugen .animate-enter6 {
         animation: animate-enter6-frames 0.4s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(-25px, 0);
+        transform: translate(25px, 0);
       }
       .yugen .animate-enter7 {
-        animation: animate-enter7-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter7-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(25px, 0);
       }
       .yugen .animate-enter8 {
-        animation: animate-enter8-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter8-frames 0.3s ease-in-out 0s 1 normal forwards;
         display: block;
         opacity: 0;
-        transform: translate(-25px, 0);
+        transform: translate(0, 25px);
       }
       .yugen .animate-enter9 {
-        animation: animate-enter9-frames 0.4s ease-in-out 0s 1 normal forwards;
+        animation: animate-enter9-frames 0.44s ease-in-out 0s 1 normal forwards;
         display: block;
-        opacity: 0;
-        transform: translate(25px, 0);
-      }
-      .yugen .app-coming-really-soon-QKvJL0 {
-        background-color: transparent;
-        bottom: 293px;
-        color: var(--cod-gray);
-        display: block;
-        font-family: var(--font-family-recoleta-regular);
-        font-size: var(--font-size-xxxl);
-        font-weight: 400;
-        height: auto;
-        left: calc(50% - 223px);
-        letter-spacing: 0px;
-        line-height: 44px;
-        mix-blend-mode: normal;
-        position: absolute;
-        text-align: left;
-        white-space: nowrap;
-        width: auto;
         opacity: 0;
       }
       .yugen .build-organize-tually-anywhere-r1vSAy {
         background-color: transparent;
         color: #545454;
         font-family: var(--font-family-recoleta-medium);
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-xxl);
         font-weight: 500;
         height: auto;
         left: calc(50% - 262px);
@@ -494,13 +478,13 @@
         font-size: var(--font-size-xs);
         font-weight: 500;
         height: auto;
-        left: 24px;
+        left: 19px;
         letter-spacing: 0px;
-        line-height: 22.1px;
+        line-height: 19.3px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 24px;
+        top: 19px;
         white-space: nowrap;
         width: auto;
       }
@@ -513,7 +497,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 74px;
+        top: 60px;
         width: 357px;
       }
       .yugen .collaborative-p-ctivity-tracker-LaOufS {
@@ -551,15 +535,51 @@
         top: 53px;
         width: 229px;
       }
-      .yugen .ellipse-4-MLKpyy {
-        background-color: #eb7288;
-        border-radius: 125.94055938720703px;
-        bottom: 0px;
-        height: 252px;
-        left: calc(50% - 126px);
+      .yugen .download-app-lX15QB {
+        background-color: transparent;
+        color: var(--white);
+        font-family: var(--font-family-work_sans);
+        font-size: var(--font-size-s);
+        font-weight: 500;
+        height: auto;
+        left: 19px;
+        letter-spacing: 0px;
+        line-height: 24.8px;
         mix-blend-mode: normal;
         position: absolute;
-        width: 252px;
+        text-align: left;
+        top: 19px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .yugen .download-the-app-now-QKvJL0 {
+        background-color: transparent;
+        bottom: 267px;
+        color: var(--cod-gray);
+        display: block;
+        font-family: var(--font-family-recoleta-regular);
+        font-size: var(--font-size-35_5px);
+        font-weight: 400;
+        height: auto;
+        left: calc(50% - 198px);
+        letter-spacing: 0px;
+        line-height: 39.1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: 395px;
+        opacity: 0;
+      }
+      .yugen .ellipse-4-MLKpyy {
+        background-color: #eb7288;
+        border-radius: 99.07332611083984px;
+        bottom: 0px;
+        height: 198px;
+        left: calc(50% - 99px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 198px;
       }
       .yugen .ellipse-59-g3HKGB {
         background-color: #1f1f1f;
@@ -606,23 +626,23 @@
         background-color: transparent;
         display: block;
         height: 495px;
-        left: calc(50% + 92px);
+        left: calc(50% - 597px);
         mix-blend-mode: normal;
         object-fit: cover;
         position: absolute;
         top: 0px;
-        width: 494px;
+        width: 495px;
         opacity: 0;
         transform: translate(25px, 0);
       }
       .yugen .frame-130-dlKqZ6 {
         background-color: transparent;
         height: 180px;
-        left: -63px;
+        left: 1px;
         mix-blend-mode: normal;
         opacity: 0.4;
         position: absolute;
-        top: 311px;
+        top: 216px;
         transform: rotate(139.95deg);
         width: 1033px;
       }
@@ -733,15 +753,15 @@
       }
       .yugen .frame-705-QKvJL0 {
         background-color: var(--royal-blue);
-        border-radius: 6px;
+        border-radius: 4.744753837585449px;
         bottom: 0px;
-        box-shadow: 0px 5px 25px #4454de80;
+        box-shadow: 0px 3.9539613723754883px 19.769805908203125px #4454de80;
         cursor: pointer;
-        height: 70px;
-        left: calc(50% - 223px);
+        height: 57px;
+        left: calc(50% - 198px);
         mix-blend-mode: normal;
         position: absolute;
-        width: 258px;
+        width: 222px;
       }
       .yugen .frame-706-C61RwL {
         background-color: transparent;
@@ -752,13 +772,25 @@
         top: 875px;
         width: 1860px;
       }
+      .yugen .frame-706-QKvJL0 {
+        background-color: var(--royal-blue);
+        border-radius: 4.744753837585449px;
+        bottom: 180px;
+        box-shadow: 0px 3.9539613723754883px 19.769805908203125px #4454de80;
+        cursor: pointer;
+        height: 63px;
+        left: calc(50% - 198px);
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 166px;
+      }
       .yugen .frame-707-C61RwL {
         background-color: transparent;
         height: 1968px;
         left: calc(50% - 617px);
         mix-blend-mode: normal;
         position: absolute;
-        top: 6115px;
+        top: 3869px;
         width: 1239px;
       }
       .yugen .g114-xmeKl4 {
@@ -864,16 +896,17 @@
       }
       .yugen .gamify-your-experience-U135jI {
         background-color: transparent;
-        bottom: 160px;
+        bottom: 144px;
         display: block;
         height: auto;
         left: calc(50% - 151px);
         letter-spacing: 0px;
-        line-height: 39.6px;
+        line-height: 40.6px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        width: 250px;
+        white-space: nowrap;
+        width: 304px;
         opacity: 0;
       }
       .yugen .gg-score-and-yu-n-and-intuitive-U135jI {
@@ -885,7 +918,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 135px;
+        top: 80px;
         width: 307px;
       }
       .yugen .grommet-iconsfigma-6LEltU {
@@ -900,19 +933,19 @@
       }
       .yugen .group-12-Qmpzs2 {
         background-color: transparent;
-        bottom: 155px;
-        height: 252px;
-        left: calc(50% - 126px);
+        bottom: 122px;
+        height: 198px;
+        left: calc(50% - 99px);
         position: absolute;
-        width: 252px;
+        width: 198px;
       }
       .yugen .group-13-Qmpzs2 {
         background-color: transparent;
-        bottom: 1px;
-        height: 101px;
-        left: calc(50% - 147px);
+        bottom: 0px;
+        height: 80px;
+        left: calc(50% - 116px);
         position: absolute;
-        width: 296px;
+        width: 233px;
       }
       .yugen .group-14-C61RwL {
         background-color: transparent;
@@ -924,17 +957,17 @@
       }
       .yugen .group-14-kqmEWe {
         background-color: transparent;
-        height: 407px;
+        height: 320px;
         left: 0px;
         position: absolute;
         top: 0px;
-        width: 294px;
+        width: 231px;
       }
       .yugen .group-541-eykqzh {
         background-color: transparent;
         height: 1639px;
         left: -0px;
-        position: relative;
+        position: absolute;
         top: 0px;
         width: 2709px;
       }
@@ -942,7 +975,7 @@
         background-color: transparent;
         display: block;
         height: 249px;
-        left: calc(50% - 587px);
+        left: calc(50% + 17px);
         position: absolute;
         top: 88px;
         width: 583px;
@@ -955,7 +988,7 @@
         height: 318px;
         left: calc(50% - 616px);
         position: absolute;
-        top: 2066px;
+        top: 6683px;
         width: 599px;
         opacity: 0;
         transform: translate(-25px, 0);
@@ -977,7 +1010,7 @@
         height: 321px;
         left: calc(50% - 562px);
         position: absolute;
-        top: calc(50% - 4377px);
+        top: 323px;
         width: 658px;
         opacity: 0;
         transform: translate(-25px, 0);
@@ -985,10 +1018,10 @@
       .yugen .group-549-C61RwL {
         background-color: transparent;
         height: 494px;
-        left: calc(50% - 587px);
+        left: calc(50% - 595px);
         position: absolute;
-        top: 3344px;
-        width: 1174px;
+        top: 1966px;
+        width: 1193px;
       }
       .yugen .group-550-XWvYir {
         background-color: transparent;
@@ -1004,7 +1037,7 @@
         height: 480px;
         left: calc(50% - 550px);
         position: absolute;
-        top: 5338px;
+        top: 8372px;
         width: 1102px;
         opacity: 0;
         transform: translate(0, 25px);
@@ -1015,7 +1048,7 @@
         height: 1032px;
         left: calc(50% - 532px);
         position: absolute;
-        top: 4060px;
+        top: 2698px;
         width: 1064px;
         opacity: 0;
         transform: translate(0, 25px);
@@ -1030,20 +1063,20 @@
       }
       .yugen .group-561-kqmEWe {
         background-color: transparent;
-        bottom: 16px;
-        height: 337px;
-        left: calc(50% + 58px);
+        bottom: 7px;
+        height: 306px;
+        left: calc(50% + 24px);
         position: absolute;
-        width: 446px;
+        width: 397px;
       }
       .yugen .group-562-C61RwL {
         background-color: transparent;
         display: block;
-        height: 407px;
-        left: 220px;
+        height: 320px;
+        left: 304px;
         position: absolute;
-        top: 8178px;
-        width: 1001px;
+        top: 9072px;
+        width: 832px;
         opacity: 0;
         transform: translate(0, 25px);
       }
@@ -1053,23 +1086,23 @@
         height: 396px;
         left: calc(50% - 616px);
         position: absolute;
-        top: 2723px;
+        top: 7446px;
         width: 713px;
         opacity: 0;
         transform: translate(-25px, 0);
       }
       .yugen .group-564-t6AlEG {
         background-color: transparent;
-        bottom: 184px;
-        height: 138px;
+        bottom: 191px;
+        height: 131px;
         left: calc(50% - 386px);
         position: absolute;
         width: 359px;
       }
       .yugen .group-565-Hd2NY5 {
         background-color: transparent;
-        bottom: 250px;
-        height: 144px;
+        bottom: 265px;
+        height: 130px;
         left: calc(50% - 23px);
         position: absolute;
         width: 359px;
@@ -1077,15 +1110,15 @@
       .yugen .group-566-YNCD05 {
         background-color: transparent;
         bottom: 243px;
-        height: 240px;
+        height: 185px;
         left: calc(50% - 352px);
         position: absolute;
         width: 309px;
       }
       .yugen .group-567-9Nx0xl {
         background-color: transparent;
-        bottom: 269px;
-        height: 243px;
+        bottom: 278px;
+        height: 204px;
         left: calc(50% - 28px);
         position: absolute;
         width: 403px;
@@ -1122,6 +1155,17 @@
         top: 0px;
         width: 772px;
       }
+      .yugen .group-573-C61RwL {
+        background-color: transparent;
+        display: block;
+        height: 646px;
+        left: calc(50% - 555px);
+        position: absolute;
+        top: 5913px;
+        width: 1128px;
+        opacity: 0;
+        transform: translate(0, 25px);
+      }
       .yugen .group-ycAXJ8 {
         background-color: transparent;
         height: 100%;
@@ -1147,7 +1191,7 @@
         background-color: transparent;
         color: var(--white);
         font-family: var(--font-family-recoleta-medium);
-        font-size: var(--font-size-xxxxxl);
+        font-size: var(--font-size-xxxxxxl);
         font-weight: 500;
         height: auto;
         left: calc(50% - 329px);
@@ -1156,7 +1200,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: calc(50% - 161px);
+        top: 0px;
         width: 656px;
       }
       .yugen .human-psycholog-ims-to-solve-it-fyjDSQ {
@@ -1197,38 +1241,35 @@
         opacity: 0;
         transform: translate(25px, 0);
       }
-      .yugen .image-12-C61RwL {
-        background-color: transparent;
-        display: block;
-        height: 618px;
-        left: calc(50% + 193px);
-        mix-blend-mode: normal;
-        object-fit: cover;
-        position: absolute;
-        top: 174px;
-        width: 310px;
-        opacity: 0;
-        transform: translate(25px, 0);
-      }
       .yugen .image-13-C61RwL {
         background-color: transparent;
-        height: 1005px;
+        height: 1006px;
         mix-blend-mode: normal;
         object-fit: cover;
         position: absolute;
         right: -718px;
-        top: 2170px;
+        top: 6827px;
         width: 1722px;
       }
       .yugen .image-2-Hd2NY5 {
         background-color: transparent;
-        height: 646px;
+        height: 647px;
         left: -1px;
         mix-blend-mode: normal;
         object-fit: cover;
         position: absolute;
-        top: 0px;
+        top: -1px;
         width: 400px;
+      }
+      .yugen .image-20-eykqzh {
+        background-color: transparent;
+        height: 775px;
+        left: calc(50% + 42px);
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 285px;
+        width: 578px;
       }
       .yugen .image-3-9Nx0xl {
         background-color: transparent;
@@ -1253,14 +1294,24 @@
         top: 0px;
         width: 400px;
       }
+      .yugen .image-8-C61RwL {
+        background-color: transparent;
+        height: 347px;
+        left: 440px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+        position: absolute;
+        top: 7904px;
+        width: 562px;
+      }
       .yugen .journal-all-the-group-features-61QJC0 {
         background-color: transparent;
-        bottom: 123px;
+        bottom: 122px;
         display: block;
         height: auto;
         left: calc(50% - 202px);
         letter-spacing: 0px;
-        line-height: 39.6px;
+        line-height: 40.6px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -1305,23 +1356,23 @@
       .yugen .mask-group-MLKpyy {
         background-color: transparent;
         bottom: 0px;
-        height: 252px;
-        left: calc(50% - 126px);
+        height: 199px;
+        left: calc(50% - 100px);
         position: absolute;
-        width: 252px;
+        width: 199px;
       }
       .yugen .meanwhile-QKvJL0 {
         background-color: transparent;
-        bottom: 91px;
+        bottom: 75px;
         color: var(--cod-gray);
         display: block;
         font-family: var(--font-family-recoleta-regular);
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-m);
         font-weight: 400;
         height: auto;
-        left: calc(50% - 223px);
+        left: calc(50% - 198px);
         letter-spacing: 0px;
-        line-height: 35.2px;
+        line-height: 22px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -1402,11 +1453,11 @@
       }
       .yugen .path154-xmeKl4 {
         background-color: transparent;
-        height: 786px;
+        height: 813px;
         left: 276px;
         mix-blend-mode: normal;
         position: absolute;
-        top: calc(50% - 641px);
+        top: calc(50% - 640px);
         width: calc(100% - 513px);
       }
       .yugen .path172-PCyJYJ {
@@ -1484,7 +1535,7 @@
         background-color: transparent;
         color: var(--white);
         font-family: var(--font-family-recoleta-light);
-        font-size: var(--font-size-xxxl);
+        font-size: var(--font-size-xxxxl);
         font-weight: 300;
         height: auto;
         left: calc(50% - 357px);
@@ -1524,7 +1575,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 6813px;
+        top: 4567px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-398-C61RwL {
@@ -1533,7 +1584,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 6377px;
+        top: 4131px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-399-C61RwL {
@@ -1542,7 +1593,7 @@
         left: -351px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 7247px;
+        top: 5001px;
         width: calc(100% + 553px);
       }
       .yugen .rectangle-400-C61RwL {
@@ -1553,6 +1604,15 @@
         position: absolute;
         top: -54px;
         width: calc(100% + 372px);
+      }
+      .yugen .rectangle-401-C61RwL {
+        background-color: var(--black);
+        height: 801px;
+        left: -351px;
+        mix-blend-mode: normal;
+        position: absolute;
+        top: 5466px;
+        width: calc(100% + 553px);
       }
       .yugen .rectangle-65-C61RwL {
         background-color: #79d3e0;
@@ -1565,11 +1625,11 @@
       }
       .yugen .rectangle-67-C61RwL {
         background-color: transparent;
-        height: 1298px;
+        height: 1709px;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 1953px;
+        top: 6266px;
         width: calc(100% + 3px);
       }
       .yugen .simple-iconsts-node-2PHdm8 {
@@ -1610,7 +1670,7 @@
       .yugen .span1-FTXB9H {
         color: var(--cod-gray);
         font-family: var(--font-family-recoleta-semibold);
-        font-size: var(--font-size-xxxxl);
+        font-size: var(--font-size-xxxxxl);
         font-weight: 600;
       }
       .yugen .star-g3HKGB {
@@ -1624,12 +1684,12 @@
       }
       .yugen .team-collaboration-ifxR5S {
         background-color: transparent;
-        bottom: 104px;
+        bottom: 89px;
         display: block;
         height: auto;
         left: calc(50% - 179px);
         letter-spacing: 0px;
-        line-height: 39.6px;
+        line-height: 40.6px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
@@ -1680,17 +1740,17 @@
         bottom: 0px;
         color: #545454;
         font-family: var(--font-family-recoleta-light);
-        font-size: var(--font-size-108_2px);
+        font-size: var(--font-size-85_1px);
         font-weight: 300;
         height: auto;
-        left: calc(50% - 148px);
+        left: calc(50% - 117px);
         letter-spacing: 0px;
-        line-height: 101.5px;
+        line-height: 79.8px;
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
         white-space: nowrap;
-        width: 296px;
+        width: 233px;
       }
       .yugen .to-do-U6OUdv {
         background-color: transparent;
@@ -1714,7 +1774,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 68px;
+        top: 61px;
         width: 357px;
       }
       .yugen .tourists-LaOufS {
@@ -1752,7 +1812,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: calc(50% + 91px);
+        top: 251px;
         width: 639px;
       }
       .yugen .train-U6OUdv {
@@ -1767,10 +1827,6 @@
       }
       .yugen .truely-express-y-talking-to-it-61QJC0 {
         background-color: transparent;
-        color: var(--black);
-        font-family: var(--font-family-nunito_sans);
-        font-size: var(--font-size-l);
-        font-weight: 400;
         height: auto;
         left: 0px;
         letter-spacing: 0px;
@@ -1778,7 +1834,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 173px;
+        top: 134px;
         width: 401px;
       }
       .yugen .union-Cla5sn {
@@ -1850,11 +1906,11 @@
       }
       .yugen .vector-CvikQ2 {
         background-color: transparent;
-        height: 100.79%;
+        height: 100.3%;
         left: 5.72%;
         mix-blend-mode: normal;
         position: absolute;
-        top: -0.4%;
+        top: 0px;
         width: 88.56%;
       }
       .yugen .vector-DpnTTN {
@@ -1877,11 +1933,11 @@
       }
       .yugen .vector-GSee4F {
         background-color: transparent;
-        height: 42.41%;
+        height: 42.84%;
         left: 27.97%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 45.82%;
+        top: 45.6%;
         width: 71.95%;
       }
       .yugen .vector-HhEcmI {
@@ -1895,11 +1951,11 @@
       }
       .yugen .vector-Io3CC9 {
         background-color: transparent;
-        height: 77.31%;
+        height: 76.82%;
         left: 0px;
         mix-blend-mode: normal;
         position: absolute;
-        top: 11.35%;
+        top: 11.59%;
         width: 100.21%;
       }
       .yugen .vector-Svqa5X {
@@ -1913,11 +1969,11 @@
       }
       .yugen .vector-bfUX5m {
         background-color: transparent;
-        height: 34.23%;
+        height: 33.74%;
         left: -0.3%;
         mix-blend-mode: normal;
         position: absolute;
-        top: 66.22%;
+        top: 66.46%;
         width: 50.61%;
       }
       .yugen .vector-dlKqZ6 {
@@ -1983,7 +2039,7 @@
         mix-blend-mode: normal;
         position: absolute;
         text-align: left;
-        top: 3942px;
+        top: 2580px;
         white-space: nowrap;
         width: auto;
         opacity: 0;
@@ -2078,10 +2134,29 @@
         white-space: nowrap;
         width: auto;
       }
+      .yugen .yugen-timer-C61RwL {
+        background-color: transparent;
+        bottom: 4242px;
+        color: var(--white);
+        display: block;
+        font-family: var(--font-family-recoleta-medium);
+        font-size: var(--font-size-xxxl);
+        font-weight: 500;
+        height: auto;
+        left: calc(50% - 104px);
+        letter-spacing: 0px;
+        line-height: 55.1px;
+        mix-blend-mode: normal;
+        position: absolute;
+        text-align: left;
+        white-space: nowrap;
+        width: auto;
+        opacity: 0;
+      }
       @keyframes animate-enter-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
@@ -2091,7 +2166,7 @@
       @keyframes animate-enter1-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
@@ -2101,19 +2176,19 @@
       @keyframes animate-enter10-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter11-frames {
         from {
           opacity: 0;
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter12-frames {
@@ -2137,7 +2212,7 @@
       @keyframes animate-enter14-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
@@ -2155,29 +2230,27 @@
       @keyframes animate-enter16-frames {
         from {
           opacity: 0;
+          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter17-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter18-frames {
         from {
           opacity: 0;
-          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter19-frames {
@@ -2201,25 +2274,25 @@
       @keyframes animate-enter20-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes animate-enter21-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
           transform: translate(0, 0);
         }
       }
-      @keyframes animate-enter21-frames {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
       @keyframes animate-enter22-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2229,17 +2302,21 @@
       @keyframes animate-enter23-frames {
         from {
           opacity: 0;
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter24-frames {
         from {
           opacity: 0;
+          transform: translate(-25px, 0);
         }
         to {
           opacity: 1;
+          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter25-frames {
@@ -2250,17 +2327,7 @@
           opacity: 1;
         }
       }
-      @keyframes animate-enter3-frames {
-        from {
-          opacity: 0;
-          transform: translate(25px, 0);
-        }
-        to {
-          opacity: 1;
-          transform: translate(0, 0);
-        }
-      }
-      @keyframes animate-enter4-frames {
+      @keyframes animate-enter26-frames {
         from {
           opacity: 0;
           transform: translate(0, 25px);
@@ -2270,7 +2337,17 @@
           transform: translate(0, 0);
         }
       }
-      @keyframes animate-enter5-frames {
+      @keyframes animate-enter3-frames {
+        from {
+          opacity: 0;
+          transform: translate(0, 25px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter4-frames {
         from {
           opacity: 0;
         }
@@ -2278,10 +2355,20 @@
           opacity: 1;
         }
       }
-      @keyframes animate-enter6-frames {
+      @keyframes animate-enter5-frames {
         from {
           opacity: 0;
           transform: translate(-25px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes animate-enter6-frames {
+        from {
+          opacity: 0;
+          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
@@ -2291,17 +2378,15 @@
       @keyframes animate-enter7-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
       @keyframes animate-enter8-frames {
         from {
           opacity: 0;
-          transform: translate(-25px, 0);
+          transform: translate(0, 25px);
         }
         to {
           opacity: 1;
@@ -2311,11 +2396,9 @@
       @keyframes animate-enter9-frames {
         from {
           opacity: 0;
-          transform: translate(25px, 0);
         }
         to {
           opacity: 1;
-          transform: translate(0, 0);
         }
       }
     </style>
@@ -2324,6 +2407,52 @@
   <body style="margin: 0; background: #ffffff">
     <input type="hidden" id="anPageName" name="page" value="yugen" />
     <div class="yugen screen" data-id="42:23967">
+      <div class="rectangle-401-C61RwL" data-id="95:590"></div>
+      <div class="frame-706-C61RwL" data-id="58:1377">
+        <div class="frame-130-dlKqZ6" data-id="42:24669">
+          <img
+            class="vector-26-5Nxcvc"
+            data-id="42:24670"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-26-1@1x.png"
+          /><img
+            class="vector-25-5Nxcvc"
+            data-id="42:24671"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-25-1@1x.png"
+          /><img
+            class="vector-27-5Nxcvc"
+            data-id="42:24672"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/vector-27-1@1x.png"
+          />
+        </div>
+        <img
+          class="vector-dlKqZ6"
+          data-id="42:24469"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/vector@1x.png"
+        /><img
+          class="image-11-dlKqZ6 animate-enter"
+          data-id="45:1367"
+          show-on-scroll
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-11@1x.png"
+        />
+        <div
+          class="group-547-dlKqZ6 animate-enter1"
+          data-id="45:1454"
+          show-on-scroll
+        >
+          <div class="build-organize-tually-anywhere-r1vSAy" data-id="45:1368">
+            Build, organize, and collaborate on work in one place from virtually
+            anywhere
+          </div>
+          <div class="single-powerful-youll-ever-need-r1vSAy" data-id="45:1370">
+            SINGLE POWERFUL GROWTH APP YOU’LL EVER NEED
+          </div>
+        </div>
+      </div>
       <div class="rectangle-400-C61RwL" data-id="52:49"></div>
       <div class="rectangle-65-C61RwL" data-id="42:24219"></div>
       <div class="frame-485-C61RwL" data-id="45:1444">
@@ -2419,7 +2548,7 @@
               class="path154-xmeKl4"
               data-id="42:24199"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/path154@1x.png"
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/path154-1@1x.png"
             />
             <div class="g158-xmeKl4" data-id="42:24200">
               <img
@@ -2447,8 +2576,14 @@
             </div>
           </div>
         </div>
+        <img
+          class="image-20-eykqzh"
+          data-id="99:1460"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd14f8916c46faf5f14e9/img/image-20@1x.png"
+        />
       </div>
-      <div class="group-548-C61RwL animate-enter" data-id="45:1455">
+      <div class="group-548-C61RwL animate-enter2" data-id="45:1455">
         <div class="heal-grow-and-accomplish-S92Q8r" data-id="42:24470">
           Heal, grow and<br />accomplish
         </div>
@@ -2460,39 +2595,10 @@
       <div class="group-14-C61RwL" data-id="42:24220">
         <div class="yugen-AX7pWk" data-id="42:24221">Yugen</div>
       </div>
-      <img
-        class="rectangle-67-C61RwL"
-        data-id="45:1393"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/rectangle-67@1x.png"
-      />
-      <div class="group-546-C61RwL animate-enter2" data-id="45:1453">
-        <div class="what-is-yugen-yzfg5m" data-id="45:1394">WHAT IS YUGEN?</div>
-        <div
-          class="yu-gen-is-a-pro-to-make-use-of-yzfg5m worksans-normal-white-20px animate-enter1"
-          data-id="45:1392"
-          show-on-scroll
-        >
-          <span class="span0-4X3RBw worksans-normal-white-20px"
-            >YuGen is a productivity and self-growth tool. The motive of the app
-            is not to dynamically tell you what to do, but it’s is a reflection
-            of your day and gives you control over what to do further.<br /><br />YuGen
-            is a very advanced combination of a high complexity ToDo App, Diary
-            and dictaphone that is a perfect fit for any individuals and teams
-            to make use of</span
-          ><span class="span1-4X3RBw worksans-normal-white-20px">.</span>
-        </div>
-      </div>
-      <img
-        class="image-12-C61RwL animate-enter3"
-        data-id="45:1440"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/image-12@1x.png"
-      />
       <div class="group-549-C61RwL" data-id="45:1456">
-        <div class="group-543-LoK6ev animate-enter6" data-id="45:1448">
+        <div class="group-543-LoK6ev animate-enter5" data-id="45:1448">
           <div
-            class="yu-gen-is-a-pro-t-to-do-further-jxXxQ1 animate-enter4"
+            class="yu-gen-is-a-pro-t-to-do-further-jxXxQ1 animate-enter3"
             data-id="45:1447"
             show-on-scroll
           >
@@ -2501,7 +2607,7 @@
             of your day and gives you control over what to do further.
           </div>
           <div
-            class="work-in-peace-jxXxQ1 recoleta-regular-normal-cod-gray-48px animate-enter5"
+            class="work-in-peace-jxXxQ1 recoleta-regular-normal-cod-gray-48px animate-enter4"
             data-id="42:24007"
             show-on-scroll
           >
@@ -2509,170 +2615,15 @@
           </div>
         </div>
         <img
-          class="floating-LoK6ev animate-enter7"
+          class="floating-LoK6ev animate-enter6"
           data-id="42:24176"
           show-on-scroll
           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/floating@2x.png"
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/floating@2x.png"
         />
       </div>
-      <div class="group-563-C61RwL animate-enter8" data-id="52:26">
-        <div
-          class="human-psycholog-ims-to-solve-it-fyjDSQ worksans-normal-white-20px"
-          data-id="45:1443"
-        >
-          Human psychology is an intriguing subject. Sometimes these small
-          things add up and impact one&#39;s life in the longer term.<br /><br />In
-          the ruthlessly competitive world of the 21st Century, productivity
-          highly contributes to the personal growth and mental health of a
-          person that guarantees survival.<br /><br />Many people in this world
-          are unable to tap the power of their productivity and that is a major
-          issue and Yugen aims to solve it
-        </div>
-        <div class="problems-fyjDSQ" data-id="42:24217">Problems.</div>
-      </div>
-      <div class="frame-706-C61RwL" data-id="58:1377">
-        <div class="frame-130-dlKqZ6" data-id="42:24669">
-          <img
-            class="vector-26-5Nxcvc"
-            data-id="42:24670"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-26@1x.png"
-          /><img
-            class="vector-25-5Nxcvc"
-            data-id="42:24671"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-25@1x.png"
-          /><img
-            class="vector-27-5Nxcvc"
-            data-id="42:24672"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vector-27@1x.png"
-          />
-        </div>
-        <img
-          class="vector-dlKqZ6"
-          data-id="42:24469"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9d4c69b596c51e3f4eab/img/vector@1x.png"
-        /><img
-          class="image-11-dlKqZ6 animate-enter9"
-          data-id="45:1367"
-          show-on-scroll
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-11@1x.png"
-        />
-        <div
-          class="group-547-dlKqZ6 animate-enter10"
-          data-id="45:1454"
-          show-on-scroll
-        >
-          <div class="build-organize-tually-anywhere-r1vSAy" data-id="45:1368">
-            Build, organize, and collaborate on work in one place from virtually
-            anywhere
-          </div>
-          <div class="single-powerful-youll-ever-need-r1vSAy" data-id="45:1370">
-            SINGLE POWERFUL GROWTH APP YOU’LL EVER NEED
-          </div>
-        </div>
-      </div>
       <div
-        class="group-554-C61RwL animate-enter12"
-        data-id="45:1505"
-        show-on-scroll
-      >
-        <div
-          class="tech-stack-jCcFz7 recoleta-regular-normal-cod-gray-48px animate-enter11"
-          data-id="45:1458"
-          show-on-scroll
-        >
-          Tech stack
-        </div>
-        <div class="frame-486-jCcFz7" data-id="45:1460">
-          <div class="group-550-XWvYir" data-id="45:1478">
-            <div class="simple-iconsts-node-2PHdm8" data-id="45:1468">
-              <img
-                class="vector-CvikQ2"
-                data-id="45:1469"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-1@2x.png"
-              />
-            </div>
-            <div class="fa-brandsnode-2PHdm8" data-id="45:1470">
-              <img
-                class="vector-Io3CC9"
-                data-id="45:1471"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-2@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-487-jCcFz7" data-id="45:1479">
-          <div class="grommet-iconsfigma-6LEltU" data-id="45:1461">
-            <div class="group-ycAXJ8" data-id="45:1462">
-              <img
-                class="vector-HhEcmI"
-                data-id="45:1463"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-3@2x.png"
-              /><img
-                class="vector-bfUX5m"
-                data-id="45:1464"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-4@2x.png"
-              /><img
-                class="vector-Svqa5X"
-                data-id="45:1465"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-5@2x.png"
-              /><img
-                class="vector-gbTRsz"
-                data-id="45:1466"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-6@2x.png"
-              /><img
-                class="vector-xEAiGY"
-                data-id="45:1467"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-7@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-488-jCcFz7" data-id="45:1486">
-          <div class="logosflutter-xqnum0" data-id="45:1472">
-            <img
-              class="vector-FfTe2l"
-              data-id="45:1473"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-8@2x.png"
-            /><img
-              class="vector-GSee4F"
-              data-id="45:1474"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-9@2x.png"
-            /><img
-              class="vector-DpnTTN"
-              data-id="45:1475"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-10@2x.png"
-            /><img
-              class="vector-qaqE3m"
-              data-id="45:1476"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-11@2x.png"
-            /><img
-              class="vector-6kztxm"
-              data-id="45:1477"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/vector-12@2x.png"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="why-yugen-C61RwL recoleta-regular-normal-cod-gray-48px animate-enter13"
+        class="why-yugen-C61RwL recoleta-regular-normal-cod-gray-48px animate-enter7"
         data-id="45:1530"
         show-on-scroll
       >
@@ -2681,7 +2632,7 @@
         ><span class="span1-FTXB9H">Yugen?</span>
       </div>
       <div
-        class="group-559-C61RwL animate-enter14"
+        class="group-559-C61RwL animate-enter8"
         data-id="45:1574"
         show-on-scroll
       >
@@ -2690,7 +2641,7 @@
             class="train-U6OUdv"
             data-id="45:1565"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/train@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/train@2x.png"
           />
           <div
             class="to-do-U6OUdv recoleta-regular-normal-black-40px"
@@ -2710,7 +2661,7 @@
             class="discovery-O4xPlN"
             data-id="45:1568"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/discovery@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/discovery@2x.png"
           />
           <div
             class="diary-O4xPlN recoleta-regular-normal-black-40px"
@@ -2730,7 +2681,7 @@
             class="tickets-nbhwUF"
             data-id="45:1566"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/tickets@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/tickets@2x.png"
           />
           <div
             class="yugen-nbhwUF recoleta-regular-normal-black-40px"
@@ -2750,7 +2701,7 @@
             class="tourists-LaOufS"
             data-id="45:1569"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/tourists@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/tourists@2x.png"
           />
           <div
             class="teams-LaOufS recoleta-regular-normal-black-40px"
@@ -2770,7 +2721,7 @@
             class="vacation-DXmzYo"
             data-id="45:1563"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/vacation@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/vacation@2x.png"
           />
           <div
             class="gamification-DXmzYo recoleta-regular-normal-black-40px"
@@ -2790,7 +2741,7 @@
             class="landscape-view-oIhpS0"
             data-id="45:1564"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d774ef68e88411d2709aa/img/landscape-view@2x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/landscape-view@2x.png"
           />
           <div
             class="growth-oIhpS0 recoleta-regular-normal-black-40px"
@@ -2808,7 +2759,7 @@
         </div>
       </div>
       <div
-        class="group-562-C61RwL animate-enter17"
+        class="group-562-C61RwL animate-enter11"
         data-id="45:1602"
         show-on-scroll
       >
@@ -2819,7 +2770,7 @@
               class="mask-group-MLKpyy"
               data-id="45:1580"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/mask-group@2x.png"
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/mask-group-6@2x.png"
             />
           </div>
           <div class="group-13-Qmpzs2" data-id="45:1587">
@@ -2835,16 +2786,22 @@
                 Checkout our designs here
               </div>
             </div></a
+          ><a href="https://www.google.com/" target="_blank"
+            ><div class="frame-706-QKvJL0" data-id="103:1481">
+              <div class="download-app-lX15QB" data-id="103:1482">
+                Download App
+              </div>
+            </div></a
           >
           <div
-            class="app-coming-really-soon-QKvJL0 animate-enter15"
+            class="download-the-app-now-QKvJL0 animate-enter9"
             data-id="45:1576"
             show-on-scroll
           >
-            App coming really soon :)
+            Download the app now
           </div>
           <div
-            class="meanwhile-QKvJL0 animate-enter16"
+            class="meanwhile-QKvJL0 animate-enter10"
             data-id="45:1599"
             show-on-scroll
           >
@@ -2855,17 +2812,17 @@
       <div class="group-560-C61RwL" data-id="45:1596">
         <div class="rectangle-396-g3HKGB" data-id="45:1575"></div>
         <img
-          class="union-g3HKGB animate-enter18"
+          class="union-g3HKGB animate-enter12"
           data-id="45:1591"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/union@2x.png"
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/union@2x.png"
         />
         <div class="ellipse-59-g3HKGB" data-id="45:1592"></div>
         <img
           class="star-g3HKGB"
           data-id="45:1593"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/star@2x.png"
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/star@2x.png"
         /><img
           class="ellipse-60-g3HKGB"
           data-id="45:1594"
@@ -2875,7 +2832,7 @@
           class="union-Cla5sn"
           data-id="45:1595"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/union-1@2x.png"
+          anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/union-1@2x.png"
         />
       </div>
       <div class="rectangle-397-C61RwL" data-id="45:1625"></div>
@@ -2883,7 +2840,7 @@
       <div class="rectangle-398-C61RwL" data-id="45:1627"></div>
       <div class="frame-707-C61RwL" data-id="58:1400">
         <div
-          class="lets-take-you-o-a-short-journey-Kzp7Wd recoleta-regular-normal-cod-gray-48px animate-enter19"
+          class="lets-take-you-o-a-short-journey-Kzp7Wd recoleta-regular-normal-cod-gray-48px animate-enter13"
           data-id="45:1537"
           show-on-scroll
         >
@@ -2891,22 +2848,22 @@
         </div>
         <div class="group-568-Kzp7Wd" data-id="58:1373">
           <img
-            class="image-3-9Nx0xl animate-enter20"
+            class="image-3-9Nx0xl animate-enter14"
             data-id="52:12"
             show-on-scroll
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-3@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-3@1x.png"
           />
           <div class="group-567-9Nx0xl" data-id="52:100">
             <div
-              class="journal-all-the-group-features-61QJC0 recoleta-medium-white-36px animate-enter21"
+              class="journal-all-the-group-features-61QJC0 recoleta-medium-white-28px animate-enter15"
               data-id="52:22"
               show-on-scroll
             >
               Journal all the way with personal and group features
             </div>
             <div
-              class="truely-express-y-talking-to-it-61QJC0"
+              class="truely-express-y-talking-to-it-61QJC0 nunitosans-normal-white-24px"
               data-id="53:1327"
             >
               Truely express your feelings to the journal by talking to it
@@ -2915,15 +2872,15 @@
         </div>
         <div class="group-571-Kzp7Wd" data-id="58:1376">
           <img
-            class="image-1-t6AlEG animate-enter22"
+            class="image-1-t6AlEG animate-enter16"
             data-id="52:13"
             show-on-scroll
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-1@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-1@1x.png"
           />
           <div class="group-564-t6AlEG" data-id="52:97">
             <div
-              class="a-personalised-to-do-Q0nZMO recoleta-medium-white-36px animate-enter23"
+              class="a-personalised-to-do-Q0nZMO recoleta-medium-white-28px animate-enter17"
               data-id="52:18"
               show-on-scroll
             >
@@ -2942,11 +2899,11 @@
             class="image-2-Hd2NY5"
             data-id="52:14"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-2@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-2@1x.png"
           />
           <div class="group-565-Hd2NY5" data-id="52:98">
             <div
-              class="team-collaboration-ifxR5S recoleta-medium-white-36px animate-enter24"
+              class="team-collaboration-ifxR5S recoleta-medium-white-28px animate-enter18"
               data-id="52:20"
               show-on-scroll
             >
@@ -2965,11 +2922,11 @@
             class="image-4-YNCD05"
             data-id="52:15"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d87a269b596c51e3f4e5e/img/image-4@1x.png"
+            anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/image-4@1x.png"
           />
           <div class="group-566-YNCD05" data-id="52:99">
             <div
-              class="gamify-your-experience-U135jI recoleta-medium-white-36px animate-enter25"
+              class="gamify-your-experience-U135jI recoleta-medium-white-28px animate-enter19"
               data-id="52:21"
               show-on-scroll
             >
@@ -2985,11 +2942,163 @@
           </div>
         </div>
       </div>
+      <div
+        class="group-554-C61RwL animate-enter21"
+        data-id="45:1505"
+        show-on-scroll
+      >
+        <div
+          class="tech-stack-jCcFz7 recoleta-regular-normal-cod-gray-48px animate-enter20"
+          data-id="45:1458"
+          show-on-scroll
+        >
+          Tech stack
+        </div>
+        <div class="frame-486-jCcFz7" data-id="45:1460">
+          <div class="group-550-XWvYir" data-id="45:1478">
+            <div class="simple-iconsts-node-2PHdm8" data-id="45:1468">
+              <img
+                class="vector-CvikQ2"
+                data-id="45:1469"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-82@2x.png"
+              />
+            </div>
+            <div class="fa-brandsnode-2PHdm8" data-id="45:1470">
+              <img
+                class="vector-Io3CC9"
+                data-id="45:1471"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-83@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-487-jCcFz7" data-id="45:1479">
+          <div class="grommet-iconsfigma-6LEltU" data-id="45:1461">
+            <div class="group-ycAXJ8" data-id="45:1462">
+              <img
+                class="vector-HhEcmI"
+                data-id="45:1463"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-84@2x.png"
+              /><img
+                class="vector-bfUX5m"
+                data-id="45:1464"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-85@2x.png"
+              /><img
+                class="vector-Svqa5X"
+                data-id="45:1465"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-86@2x.png"
+              /><img
+                class="vector-gbTRsz"
+                data-id="45:1466"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-87@2x.png"
+              /><img
+                class="vector-xEAiGY"
+                data-id="45:1467"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-88@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="frame-488-jCcFz7" data-id="45:1486">
+          <div class="logosflutter-xqnum0" data-id="45:1472">
+            <img
+              class="vector-FfTe2l"
+              data-id="45:1473"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-89@2x.png"
+            /><img
+              class="vector-GSee4F"
+              data-id="45:1474"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-90@2x.png"
+            /><img
+              class="vector-DpnTTN"
+              data-id="45:1475"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-91@2x.png"
+            /><img
+              class="vector-qaqE3m"
+              data-id="45:1476"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-92@2x.png"
+            /><img
+              class="vector-6kztxm"
+              data-id="45:1477"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/vector-93@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <img
+        class="rectangle-67-C61RwL"
+        data-id="45:1393"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dcf5d2cf5d8753a655f20/img/rectangle-67@1x.png"
+      />
+      <div class="group-546-C61RwL animate-enter23" data-id="45:1453">
+        <div class="what-is-yugen-yzfg5m" data-id="45:1394">WHAT IS YUGEN?</div>
+        <div
+          class="yu-gen-is-a-pro-to-make-use-of-yzfg5m worksans-normal-white-20px animate-enter22"
+          data-id="45:1392"
+          show-on-scroll
+        >
+          <span class="span0-4X3RBw worksans-normal-white-20px"
+            >YuGen is a productivity and self-growth tool. The motive of the app
+            is not to dynamically tell you what to do, but it’s is a reflection
+            of your day and gives you control over what to do further.<br /><br />YuGen
+            is a very advanced combination of a high complexity ToDo App, Diary
+            and dictaphone that is a perfect fit for any individuals and teams
+            to make use of</span
+          ><span class="span1-4X3RBw worksans-normal-white-20px">.</span>
+        </div>
+      </div>
+      <div class="group-563-C61RwL animate-enter24" data-id="52:26">
+        <div
+          class="human-psycholog-ims-to-solve-it-fyjDSQ worksans-normal-white-20px"
+          data-id="45:1443"
+        >
+          Human psychology is an intriguing subject. Sometimes these small
+          things add up and impact one&#39;s life in the longer term.<br /><br />In
+          the ruthlessly competitive world of the 21st Century, productivity
+          highly contributes to the personal growth and mental health of a
+          person that guarantees survival.<br /><br />Many people in this world
+          are unable to tap the power of their productivity and that is a major
+          issue and Yugen aims to solve it
+        </div>
+        <div class="problems-fyjDSQ" data-id="42:24217">Problems.</div>
+      </div>
       <img
         class="image-13-C61RwL"
         data-id="58:1468"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608d9ef57e8190e4de833e90/img/image-13@1x.png"
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/image-13-1@1x.png"
+      />
+      <div
+        class="yugen-timer-C61RwL animate-enter25"
+        data-id="95:580"
+        show-on-scroll
+      >
+        Yugen timer
+      </div>
+      <img
+        class="group-573-C61RwL animate-enter26"
+        data-id="95:588"
+        show-on-scroll
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd04c744a67c263ee0188/img/group-573-1@1x.png"
+      /><img
+        class="image-8-C61RwL"
+        data-id="101:1613"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+        anima-src="https://cdn.animaapp.com/projects/608d7713ee3fce15866cabc5/releases/608dd299502024036693adf2/img/image-8@1x.png"
       />
     </div>
     <script src="launchpad-js/launchpad-banner.js" async></script>
