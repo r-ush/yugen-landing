@@ -16,7 +16,7 @@ The word _Yūgen_ is said to mean “a profound, mysterious sense of the beauty 
 
 YuGen is a very advanced combination of a high complexity ToDo App, Diary and dictaphone that is a perfect fit for any individuals and teams to make use of.
 
-# The Problem and Inspiration
+## The Problem and Inspiration
 
 Human psychology is an intriguing subject. Sometimes these small things add up and impact one's life in the longer term.
 
