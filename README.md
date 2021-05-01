@@ -57,21 +57,21 @@ TL;DR: A tool that enables one to tap their hidden productivity potential and ma
 
 ## Business Strategy
 
-- We plan to follow a Freemium Buisness Model.
+- We plan to follow a Freemium Business Model.
 - An operating strategy to create an intended impact on a personal basis.
-- A resonable paid subscription for the team based collaborative features.
-- A one week free trial for higher customer acquisition rate.
+- Reasonable paid subscription for the team based collaborative features.
+- A one week free trial for a higher customer acquisition rate.
 
 ## Challenges we faced
 
-- When we got the idea, we were really skeptical on different similar solutions that exist in the market. We ideated on multiple features to make power-packed unique application that stands out in front of the industry leading productivity application
+- When we got the idea, we were sceptical about different similar solutions that exist in the market. We ideated on multiple features to make a power-packed unique application that stands out in front of the industry-leading productivity application
 
-- All the team members synchronize with the product on a personal level that lead to rapid ideation and a personal touch to the product from direct users of the already market ready products.
+- All the team members synchronize with the product on a personal level that leads to rapid ideation and a personal touch to the product from direct users of the already market-ready products.
 
 ## Accomplishments that we're proud of
 
 - Detailed psychological research was required because the product was directly in contact with the user psychology.
-- Wireframing was very challenging as multiple features had to be integrated in a single application
+- Wireframing was very challenging as multiple features had to be integrated into a single application
 - Implementing 40+ screens in 36 hours had kept us on our toes the whole time.
 
 ## What is next for Yugen
@@ -80,7 +80,7 @@ TL;DR: A tool that enables one to tap their hidden productivity potential and ma
 - Actions on google support for instant access on assistant and smart home devices.
 - Integration of services like Zoom and other bots for a quick access bar.
 - Giving the user a personalized environment using smart home lighting to have a mental effect of a Pomodoro timer.
-- Integrating more user metrics for teams to evauluate performance of its members.
+- Integrating more user metrics for teams to evaluate the performance of its members.
 
 ## How it works
 
